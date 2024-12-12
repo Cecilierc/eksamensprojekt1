@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radar</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header navigation -->
+    <header>
+      <nav class="topnav">
+        <a href="index.html">
+          <img src="img/logo-png.png" alt="nav_logo" class="nav_logo" />
+          <img src="img/logo-png-tele.png" alt="nav_logo_tele" class="nav_logo_tele" />
+        </a>
+
+        <div class="burger-menu" onclick="toggleMenu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <div class="close-menu" onclick="toggleMenu()">x</div>
+          <!-- Close Button -->
+          <a href="events.html">Events</a>
+          <a href="frivillig.html">Frivillig</a>
+          <a href="blog.html">Blog</a>
+          <a href="omradar.html">Om Radar</a>
+        </div>
+      </nav>
+      <script>
+        function toggleMenu() {
+          const navLinks = document.getElementById('navLinks');
+          navLinks.classList.toggle('menu-open');
+        }
+      </script>
+    </header>
+
+        <section>
+        <header class="elba-header">
+            <h1 class="elba-title">SKRIV OM DIN OPLEVELSE</h1>
+        </header>
+        <p class="dinmen-broedtekst">
+            Vi er meget nysgerrig på at høre din mening! <br>
+            Skriv dit opslag til bloggen her 
+        </p>
+        </section>
+
+        <form class="experience-form">
+            <label for="name">Fortæl os om din oplevelse:</label>
+            <input type="text" id="name" name="name" placeholder="Dit navn" required>
+            <input type="email" id="email" name="email" placeholder="Din e-mail" required>
+            <textarea id="experience" name="experience" placeholder="Skriv om din oplevelse her..." rows="6" required></textarea>
+            <button type="submit">POST</button>
+        </form>
+    
+        <div>
+            <a href="#blog" class="back-link">TILBAGE TIL <span>BLOGGEN</span></a>
+        </div>
+        
+
+
+
+   
+    <!-- Footer -->
+    <footer class="site_footer">
+      <div class="footer_container">
+        <div class="footer_text_columns">
+          <div class="footer-column">
+            <h3 class="nyhed-overskrift">TILMELD NYHEDSBREV</h3>
+            <br />
+            <form action="/action_page.php">
+              <!-- Felt til navn, skal udfyldes -->
+              <input
+                class="i_box"
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Dit navn"
+                required />
+              <!-- Kræver udfyldelse -->
+
+              <!-- Felt til e-mail, skal have et @ -->
+              <input
+                class="i_box"
+                type="email"
+                id="lname"
+                name="e-mail"
+                placeholder="Din e-mail"
+                required />
+              <!-- Kræver udfyldelse -->
+
+              <input type="submit" value="TILMELD" />
+            </form>
+          </div>
+          <div class="footer-column">
+            <a class="link-footer" href="omradar.html">RADAR</a>
+            <br/>
+            <br>
+            <p>
+              Karen Wegeners Gade 6<br />
+              <br />DK 8000 Aarhus C<br />
+              <br />Telefon +45 8676 0344
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="footer-overskrift">FØLG OS</h3>
+            <section class="sociale">
+            <a class="socialemedier" href="https://www.instagram.com/radarlive/">Instagram</a>
+            <a class="socialemedier" href="https://www.facebook.com/radarlive">Facebook</a>
+            <a class="socialemedier" href="https://www.youtube.com/user/radarliverec">Youtube</a>
+            </section>
+          </div>
+    </footer>
+  </body>
+</html>

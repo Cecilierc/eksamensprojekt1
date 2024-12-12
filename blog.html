@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radar</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header navigation -->
+    <header>
+      <nav class="topnav">
+        <a href="index.html">
+          <img src="img/logo-png.png" alt="nav_logo" class="nav_logo" />
+          <img src="img/logo-png-tele.png" alt="nav_logo_tele" class="nav_logo_tele" />
+        </a>
+
+        <div class="burger-menu" onclick="toggleMenu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <div class="close-menu" onclick="toggleMenu()">x</div>
+          <!-- Close Button -->
+          <a href="events.html">Events</a>
+          <a href="frivillig.html">Frivillig</a>
+          <a href="blog.html">Blog</a>
+          <a href="omradar.html">Om Radar</a>
+        </div>
+      </nav>
+      <script>
+        function toggleMenu() {
+          const navLinks = document.getElementById('navLinks');
+          navLinks.classList.toggle('menu-open');
+        }
+      </script>
+    </header>
+
+    <!-- Forside billede -->
+    <img
+      src="img/start-blog.png"
+      alt="Se folks meninger og holdninger om Radar"
+      class="forsidebillede" />
+
+    <!-- Pil til scroll ned -->
+    <section class="text_overlay">
+        <img class="pil" src="img/pil.png"> <!-- Pilen -->
+        <p class="udforsk-tekst">SE HVAD ANDRE SYNES</p>
+    </section>
+   
+    <main class="blog-indhold">
+        <!-- Artikel 1 -->
+        <article class="blog-artikel">
+          <header class="blog-artikel-header">
+            <time datetime="2024-09-23" class="blog-dato">23. September 2024</time>
+            <figure class="blog-billede-container">
+              <img src="img/blog1.png" alt="Turkis teamet på Radar" class="blog-billede">
+            </figure>
+            <h2 class="blog-titel">TURKIS: ”RADAR HAR VÆRET VORES SAMMENLIGNINGSGRUNDLAG FRA DAG ÉT”</h2>
+          </header>
+          <p class="blog-tekst">
+            I vores føljeton om Radars fremtid har vi taget en snak
+            med lederteamet på Turkis Baris Citirikkaya, der også står 
+            for booking og kuratering, og Thomas Beyer, der står for 
+            administration og koordinering af frivillige. De har begge 
+            en historik med Radar...
+          </p>
+          <div>
+            <button class="blog-knap">LÆS MERE</button>
+          </div>
+        </article>
+      
+        <!-- Artikel 2 -->
+        <article class="blog-artikel">
+          <header class="blog-artikel-header">
+            <time datetime="2024-10-15" class="blog-dato">15. Oktober 2024</time>
+            <figure class="blog-billede-container">
+              <img src="img/blog2.png" alt="En koncert på Radar" class="blog-billede">
+            </figure>
+            <h2 class="blog-titel">OPGRADERING AF RADARS GODE LYD ER SIKRET</h2>
+          </header>
+          <p class="blog-tekst">
+            Fremover kan de optrædende på Radar se frem til en opgradering af monitorlyden, 
+            hvilket i sidste ende også kommer publikum til gode.
+            Når du er til koncert på Radar, så gør vi altid vores bedste 
+            for at sikre, at de optrædende og publikum...
+          </p>
+          <div>
+            <button class="blog-knap">LÆS MERE</button>
+          </div>
+        </article>
+      
+        <!-- Feedback Box -->
+        <section class="blog-feedback">
+          <h2 class="blog-feedback-titel">DIN HOLDNING</h2>
+          <p class="blog-feedback-tekst">GIV DIN MENING TIL KENDE <br> ELLER SKRIV HVAD DU HAR PÅ <br>HJERTET! <br>VI VIL ALLE MEGET GERNE HØRE <br>DET</p>
+          <button class="blog-feedback-knap">SKRIV DIT OPSLAG</button>
+        </section>
+      
+        <!-- Artikel 3 -->
+        <article class="blog-artikel">
+          <header class="blog-artikel-header">
+            <time datetime="2024-10-09" class="blog-dato">9. Oktober 2024</time>
+            <figure class="blog-billede-container">
+              <img src="img/blog3.png" alt="Sophia Sagardze portræt" class="blog-billede">
+            </figure>
+            <h2 class="blog-titel">SOPHIA SAGARADZE: ”JEG HAVDE IKKE OPNÅET DET SAMME UDEN RADAR”</h2>
+          </header>
+          <p class="blog-tekst">
+            Sophia Sagaradze er stifter af Aarhus Lydforening, og 
+            Radar var det første sted i Aarhus, hvor hun følte set, 
+            hørt og forstået. Selvom hun ”bare” var en ung, studerende iværksætter 
+            med ideer, så fik Radars tilgang hende til at tro på sine projekter...
+          </p>
+          <div>
+            <button class="blog-knap">LÆS MERE</button>
+          </div>
+        </article>
+      </main>
+
+    <!-- Footer -->
+    <footer class="site_footer">
+      <div class="footer_container">
+        <div class="footer_text_columns">
+          <div class="footer-column">
+            <h3 class="nyhed-overskrift">TILMELD NYHEDSBREV</h3>
+            <br />
+            <form action="/action_page.php">
+              <!-- Felt til navn, skal udfyldes -->
+              <input
+                class="i_box"
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Dit navn"
+                required />
+              <!-- Kræver udfyldelse -->
+
+              <!-- Felt til e-mail, skal have et @ -->
+              <input
+                class="i_box"
+                type="email"
+                id="lname"
+                name="e-mail"
+                placeholder="Din e-mail"
+                required />
+              <!-- Kræver udfyldelse -->
+
+              <input type="submit" value="TILMELD" />
+            </form>
+          </div>
+          <div class="footer-column">
+            <a class="link-footer" href="omradar.html">RADAR</a>
+            <br/>
+            <br>
+            <p>
+              Karen Wegeners Gade 6<br />
+              <br />DK 8000 Aarhus C<br />
+              <br />Telefon +45 8676 0344
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="footer-overskrift">FØLG OS</h3>
+            <section class="sociale">
+            <a class="socialemedier" href="https://www.instagram.com/radarlive/">Instagram</a>
+            <a class="socialemedier" href="https://www.facebook.com/radarlive">Facebook</a>
+            <a class="socialemedier" href="https://www.youtube.com/user/radarliverec">Youtube</a>
+            </section>
+          </div>
+    </footer>
+  </body>
+</html>

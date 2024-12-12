@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radar</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header navigation -->
+    <header>
+      <nav class="topnav">
+        <a href="index.html">
+          <img src="img/logo-png.png" alt="nav_logo" class="nav_logo" />
+          <img src="img/logo-png-tele.png" alt="nav_logo_tele" class="nav_logo_tele" />
+        </a>
+
+        <div class="burger-menu" onclick="toggleMenu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <div class="close-menu" onclick="toggleMenu()">x</div>
+          <!-- Close Button -->
+          <a href="events.html">Events</a>
+          <a href="frivillig.html">Frivillig</a>
+          <a href="blog.html">Blog</a>
+          <a href="omradar.html">Om Radar</a>
+        </div>
+      </nav>
+      <script>
+        function toggleMenu() {
+          const navLinks = document.getElementById('navLinks');
+          navLinks.classList.toggle('menu-open');
+        }
+      </script>
+    </header>
+
+    <!-- Forside billede -->
+    <img
+      src="img/start-events.jpg"
+      alt="Radar, et autentisk kultursted"
+      class="forsidebillede" />
+
+    <!-- Pil til scroll ned -->
+    <section class="text_overlay">
+        <img class="pil" src="img/pil.png"> <!-- Pilen -->
+        <p class="udforsk-tekst">FIND DIT NÆSTE EVENT</p>
+    </section>
+
+
+    <section class="koncertoversigt">
+        <!-- December -->
+        <h2 class="month-title">DECEMBER 2024</h2>
+        <div class="concert-grid">
+          <a class="concert-item" href="elba.html">
+            <img class="concert-image" src="img/event1.png" alt="Concert 1">
+            <p class="concert-date">27. DECEMBER 2024</p>
+            <p class="concert-info">ELBA [SUPPORT: GIDDY GOYE]</p>
+          </a>
+          <article class="concert-item">
+            <img class="concert-image" src="img/event2.png" alt="Concert 2">
+            <p class="concert-date">30. DECEMBER 2024</p>
+            <p class="concert-info">GORGEOUS</p>
+          </article>
+        </div>
+      
+        <!-- January -->
+        <h2 class="month-title1">JANUAR 2025</h2>
+        <div class="concert-grid-two-columns">
+          <article class="concert-item">
+            <img class="concert-image" src="img/event3.png" alt="Concert 3">
+            <p class="concert-date">8. JANUAR 2024</p>
+            <p class="concert-info">MONO X UNDERVEJS PRÆSENTERER: ANASTASIA + STORFØLT + NORTHOPHERE</p>
+          </article>
+          <article class="concert-item">
+            <img class="concert-image" src="img/event4.png" alt="Concert 4">
+            <p class="concert-date">14. JANUAR 2024</p>
+            <p class="concert-info">UNG-SKAB</p>
+          </article>
+          <article class="concert-item">
+            <img class="concert-image" src="img/event5.png" alt="Concert 5">
+            <p class="concert-date">18. JANUAR 2024</p>
+            <p class="concert-info">MONO X UNDERVEJS PRÆSENTERER: ANASTASIA + STORFØLT + NORTHOPHERE</p>
+          </article>
+          <article class="concert-item">
+            <img class="concert-image" src="img/event6.png" alt="Concert 6">
+            <p class="concert-date">19. JANUAR 2024</p>
+            <p class="concert-info">SORTHANSK</p>
+          </article>
+        </div>
+      </section>
+   
+    <!-- Footer -->
+    <footer class="site_footer">
+      <div class="footer_container">
+        <div class="footer_text_columns">
+          <div class="footer-column">
+            <h3 class="nyhed-overskrift">TILMELD NYHEDSBREV</h3>
+            <br />
+            <form action="/action_page.php">
+              <!-- Felt til navn, skal udfyldes -->
+              <input
+                class="i_box"
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Dit navn"
+                required />
+              <!-- Kræver udfyldelse -->
+
+              <!-- Felt til e-mail, skal have et @ -->
+              <input
+                class="i_box"
+                type="email"
+                id="lname"
+                name="e-mail"
+                placeholder="Din e-mail"
+                required />
+              <!-- Kræver udfyldelse -->
+
+              <input type="submit" value="TILMELD" />
+            </form>
+          </div>
+          <div class="footer-column">
+            <a class="link-footer" href="omradar.html">RADAR</a>
+            <br/>
+            <br>
+            <p>
+              Karen Wegeners Gade 6<br />
+              <br />DK 8000 Aarhus C<br />
+              <br />Telefon +45 8676 0344
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="footer-overskrift">FØLG OS</h3>
+            <section class="sociale">
+            <a class="socialemedier" href="https://www.instagram.com/radarlive/">Instagram</a>
+            <a class="socialemedier" href="https://www.facebook.com/radarlive">Facebook</a>
+            <a class="socialemedier" href="https://www.youtube.com/user/radarliverec">Youtube</a>
+            </section>
+          </div>
+    </footer>
+  </body>
+</html>

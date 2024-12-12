@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radar</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header navigation -->
+    <header>
+      <nav class="topnav">
+        <a href="index.html">
+          <img src="img/logo-png.png" alt="nav_logo" class="nav_logo" />
+          <img src="img/logo-png-tele.png" alt="nav_logo_tele" class="nav_logo_tele" />
+        </a>
+
+        <div class="burger-menu" onclick="toggleMenu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <div class="close-menu" onclick="toggleMenu()">x</div>
+          <!-- Close Button -->
+          <a href="events.html">Events</a>
+          <a href="frivillig.html">Frivillig</a>
+          <a href="blog.html">Blog</a>
+          <a href="omradar.html">Om Radar</a>
+        </div>
+      </nav>
+      <script>
+        function toggleMenu() {
+          const navLinks = document.getElementById('navLinks');
+          navLinks.classList.toggle('menu-open');
+        }
+      </script>
+    </header>
+
+    <main class="hvem-er-vi">
+        <!-- Sektionens overskrift -->
+        <header class="hvem-er-vi-header">
+          <h1 class="hvem-er-vi-titel">HVEM ER VI?</h1>
+        </header>
+      
+        <!-- Grid-layout for medarbejderne -->
+        <section class="medarbejder-grid">
+          <!-- Medarbejderkort 1 -->
+          <article class="medarbejder-kort">
+            <img src="img/person1.png" alt="Martin Aagaard Jensen" class="medarbejder-billede">
+            <div class="medarbejder-tekst">
+                <h2 class="medarbejder-navn">MARTIN AAGAARD JENSEN</h2>
+                <p class="medarbejder-opgaver">
+                    Titel: Konstitueret spillestedsleder & programansvarlig <br>
+                    <br>
+                    Opgaver: Administration, udviklings- & samarbejdsprojekter, programlægning & produktion <br>
+                    <br>
+                    Mail: martin@radarlive.dk
+                </p>
+            <div>
+          </article>
+      
+          <!-- Medarbejderkort 2 -->
+    <article class="medarbejder-kort">
+        <img src="img/person2.png" alt="Sidsel Thomassen" class="medarbejder-billede">
+        <div class="medarbejder-tekst">
+        <h2 class="medarbejder-navn">SIDSEL THOMASSEN</h2>
+        <p class="medarbejder-opgaver">
+          Titel: Kommunikationsansvarlig <br>
+          <br>
+          Opgaver: Kommunikation, presse, publikumsudvikling, markedsføring, og sociale medier <br>
+          <br>
+          Mail: sidsel@radarlive.dk
+        </p>
+    </div>
+      </article>
+  
+      <!-- Medarbejderkort 3 -->
+      <article class="medarbejder-kort">
+        <img src="img/person3.png" alt="Rolf Grove" class="medarbejder-billede">
+        <div class="medarbejder-tekst">
+        <h2 class="medarbejder-navn">ROLF GROVE</h2>
+        <p class="medarbejder-opgaver">
+          Titel: Tekniker <br>
+          <br>
+          Opgaver: Lydløs, produktion, frivillige lysassistenter, REC <br>
+          <br>
+          Mail: rolf@radarlive.dk
+        </p>
+        </div>
+      </article>
+  
+      <!-- Medarbejderkort 4 -->
+      <article class="medarbejder-kort">
+        <img src="img/person4.png" alt="Morten Maagaard" class="medarbejder-billede">
+        <div class="medarbejder-tekst">
+        <h2 class="medarbejder-navn">MORTEN MAAGAARD</h2>
+        <p class="medarbejder-opgaver">
+          Titel: Mediegrafiker <br>
+          <br>
+          Opgaver: Grafik, videoproduktion <br>
+          <br>
+          Mail: morten@radarlive.dk
+        </p>
+        </div>
+      </article>
+  
+      <!-- Medarbejderkort 5 -->
+      <article class="medarbejder-kort">
+        <img src="img/person5.png" alt="Lene Ethelberg Jensen" class="medarbejder-billede">
+        <div class="medarbejder-tekst">
+        <h2 class="medarbejder-navn">LENE ETHELBERG JENSEN</h2>
+        <p class="medarbejder-opgaver">
+          Titel: Administrativ medarbejder <br>
+          <br>
+          Opgaver: Administration vdr. artister, honorar, KODA, løn og spillestedsindtjening <br>
+          <br>
+          Mail: lene@radarlive.dk
+        </p>
+        </div>
+      </article>
+  
+      <!-- Medarbejderkort 6 -->
+      <article class="medarbejder-kort">
+        <img src="img/person6.png" alt="Jens Ravnløkke" class="medarbejder-billede">
+        <div class="medarbejder-tekst">
+        <h2 class="medarbejder-navn">JENS RAVNLØKKE</h2>
+        <p class="medarbejder-opgaver">
+          Titel: Bogholder <br>
+          <br>
+          Opgaver: Økonomi og regnskab <br>
+          <br>
+          Mail: jens@radarlive.dk
+        </p>
+        </div>
+      </article>
+  
+      <!-- Medarbejderkort 7 -->
+      <article class="medarbejder-kort">
+        <img src="img/person7.png" alt="Hans Boisen Mark" class="medarbejder-billede">
+        <div class="medarbejder-tekst">
+        <h2 class="medarbejder-navn">HANS BOISEN MARK</h2>
+        <p class="medarbejder-opgaver">
+          Titel: Baransvarlig og frivilligkoordinator <br>
+          <br>
+          Opgaver: Frivilligkoordinering, bardrift, indkøb, lager, koncertafvikling <br>
+          <br>
+          Mail: hans@radarlive.dk
+        </p>
+        </div>
+      </article>
+  
+      <!-- Medarbejderkort 8 -->
+      <article class="medarbejder-kort">
+        <img src="img/person8.png" alt="Cecilie Kildemand Hansen" class="medarbejder-billede">
+        <div class="medarbejder-tekst">
+        <h2 class="medarbejder-navn">CECILIE KILDEMAND HANSEN</h2>
+        <p class="medarbejder-opgaver">
+          Titel: Baransvarlig og frivilligkoordinator <br>
+          <br>
+          Opgaver: Frivilligkoordinering, bardrift, indkøb, lager, koncertafvikling <br>
+          <br>
+          Mail: cecilia@radarlive.dk
+        </p>
+        </div>
+      </article>
+
+      <!-- Frivilligkort -->
+  <article class="medarbejder-kort medarbejder-kort-frivillige">
+    <img src="img/person9.png" alt="Radar crew,Frivilligt arbejde for unge Aarhus" class="medarbejder-billede">
+    <div class="medarbejder-tekst">
+      <h2 class="medarbejder-navn">38 FANTATISKE FRIVILLIGE</h2>
+      <p class="medarbejder-opgaver">
+        Titel:
+        <br>
+        Radar-crew
+        <br>
+        Opgaver:
+        <br>
+        Bar, entre, garderobe, lys, afvikling, foto <br>
+        <br>
+        Bliv en del af fællesskabet, hvor musikken pulserer, og kreativiteten blomstrer. 
+        <br>Som frivillig hos Radar skaber du unikke oplevelser, <br>så tøv ikke med at melde dig!
+      </p>
+      <button class="medarbejder-knap">VÆR MED</button>
+    </div>
+  </article>
+</section>
+
+</main>
+    
+
+
+
+    <!-- Footer -->
+    <footer class="site_footer">
+      <div class="footer_container">
+        <div class="footer_text_columns">
+          <div class="footer-column">
+            <h3 class="nyhed-overskrift">TILMELD NYHEDSBREV</h3>
+            <br />
+            <form action="/action_page.php">
+              <!-- Felt til navn, skal udfyldes -->
+              <input
+                class="i_box"
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Dit navn"
+                required />
+              <!-- Kræver udfyldelse -->
+
+              <!-- Felt til e-mail, skal have et @ -->
+              <input
+                class="i_box"
+                type="email"
+                id="lname"
+                name="e-mail"
+                placeholder="Din e-mail"
+                required />
+              <!-- Kræver udfyldelse -->
+
+              <input type="submit" value="TILMELD" />
+            </form>
+          </div>
+          <div class="footer-column">
+            <a class="link-footer" href="omradar.html">RADAR</a>
+            <br/>
+            <br>
+            <p>
+              Karen Wegeners Gade 6<br />
+              <br />DK 8000 Aarhus C<br />
+              <br />Telefon +45 8676 0344
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="footer-overskrift">FØLG OS</h3>
+            <section class="sociale">
+            <a class="socialemedier" href="https://www.instagram.com/radarlive/">Instagram</a>
+            <a class="socialemedier" href="https://www.facebook.com/radarlive">Facebook</a>
+            <a class="socialemedier" href="https://www.youtube.com/user/radarliverec">Youtube</a>
+            </section>
+          </div>
+    </footer>
+  </body>
+</html>

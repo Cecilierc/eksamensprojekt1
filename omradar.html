@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radar</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header navigation -->
+    <header>
+      <nav class="topnav">
+        <a href="index.html">
+          <img src="img/logo-png.png" alt="nav_logo" class="nav_logo" />
+          <img src="img/logo-png-tele.png" alt="nav_logo_tele" class="nav_logo_tele" />
+        </a>
+
+        <div class="burger-menu" onclick="toggleMenu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <div class="close-menu" onclick="toggleMenu()">x</div>
+          <!-- Close Button -->
+          <a href="events.html">Events</a>
+          <a href="frivillig.html">Frivillig</a>
+          <a href="blog.html">Blog</a>
+          <a href="omradar.html">Om Radar</a>
+        </div>
+      </nav>
+      <script>
+        function toggleMenu() {
+          const navLinks = document.getElementById('navLinks');
+          navLinks.classList.toggle('menu-open');
+        }
+      </script>
+    </header>
+
+    <!-- Forside billede -->
+    <img
+      src="img/start-omradar.jpg"
+      alt="Radar, et autentisk kultursted"
+      class="forsidebillede" />
+
+    <!-- Pil til scroll ned -->
+    <section class="text_overlay">
+        <img class="pil" src="img/pil.png"> <!-- Pilen -->
+        <p class="udforsk-tekst">LÆS OM RADAR</p>
+    </section>
+
+    <!-- Hvad er radar -->
+    <section class="omradar">
+     <h1 class="simpeloverskrift-omradar">HVAD ER RADAR?</h1>
+        <p class="omradar-broedtekst">
+            Radar er Aarhus’ scene for eksperimenterende og nichepræget musik. <br>
+            Med fokus på upcoming talenter og unikke koncertoplevelser skaber vi <br>
+            en platform, hvor musikere og publikum mødes i et kreativt <br>
+            fællesskab. <br>
+            <br>
+            Beliggende på Godsbanen fungerer Radar som både vækstcenter og <br>
+            samlingspunkt for kunstneriske projekter.
+        </p>
+        <div>
+            <button class="omradar-lilla-button">FORSTÅ OS</button>
+        </div>
+    </section>
+
+    <!-- Hvem er vi -->
+    <section class="omradar-farver">
+        <h1 class="grafoverskrift-omradar">HVEM ER VI?</h1>
+           <p class="omradar-broedtekst-farver">
+                Vores dedikerede team af medarbejdere arbejder tæt <br>
+                sammen for at skabe unikke musikoplevelser. Fra <br>
+                eventafvikling til teknisk support og administration, er <br>
+                alle med til at gøre Radar til et kreativt og <br>
+               inspirerende sted. <br>
+               <br>
+               Mød de mennesker, der driver Radar fremad!
+           </p>
+           <div class="knap-farver">
+               <a class="omradar-button-farver" href="hvemervi.html">MØD OS</a>
+           </div>
+       </section>
+
+    <!-- Hvor er vi -->
+    <section class="omradar">
+        <h1 class="simpeloverskrift-omradar">HVOR ER VI?</h1>
+           <p class="omradar-broedtekst">
+                Radar ligger på Godsbanen, 10-15 minutters gang fra  <br>
+                Aarhus Banegård, med busstoppesteder tæt på. Der <br>
+                er parkering langs Godsbanen, men husk <br>
+                parkeringsbillet. <br>
+               <br>
+               Indgangen til Radar findes lige ved Godsbanen over <br>
+               mod arkitektskolen.
+           </p>
+           <div>
+               <button class="omradar-lilla-button">FIND OS</button>
+           </div>
+       </section>
+
+
+    <!-- Footer -->
+    <footer class="site_footer">
+      <div class="footer_container">
+        <div class="footer_text_columns">
+          <div class="footer-column">
+            <h3 class="nyhed-overskrift">TILMELD NYHEDSBREV</h3>
+            <br />
+            <form action="/action_page.php">
+              <!-- Felt til navn, skal udfyldes -->
+              <input
+                class="i_box"
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Dit navn"
+                required />
+              <!-- Kræver udfyldelse -->
+
+              <!-- Felt til e-mail, skal have et @ -->
+              <input
+                class="i_box"
+                type="email"
+                id="lname"
+                name="e-mail"
+                placeholder="Din e-mail"
+                required />
+              <!-- Kræver udfyldelse -->
+
+              <input type="submit" value="TILMELD" />
+            </form>
+          </div>
+          <div class="footer-column">
+            <a class="link-footer" href="omradar.html">RADAR</a>
+            <br/>
+            <br>
+            <p>
+              Karen Wegeners Gade 6<br />
+              <br />DK 8000 Aarhus C<br />
+              <br />Telefon +45 8676 0344
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="footer-overskrift">FØLG OS</h3>
+            <section class="sociale">
+            <a class="socialemedier" href="https://www.instagram.com/radarlive/">Instagram</a>
+            <a class="socialemedier" href="https://www.facebook.com/radarlive">Facebook</a>
+            <a class="socialemedier" href="https://www.youtube.com/user/radarliverec">Youtube</a>
+            </section>
+          </div>
+    </footer>
+  </body>
+</html>
