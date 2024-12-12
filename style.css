@@ -748,11 +748,13 @@ a:hover {
   border-radius: 5px;
   cursor: pointer;
   font-family: monospace;
+  text-decoration: none;
 }
 
 .blog-knap:hover,
 .blog-feedback-knap:hover {
   background: #7c48c3;
+  text-decoration: none;
 }
 
 /* Feedback sektion */
@@ -817,6 +819,95 @@ a:hover {
   background-color: #333;
 }
 
+.dinoplevelse-overskrift {
+  font-family: monospace;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.knap-post {
+  display: inline-block; /* Sørger for, at knappen kan have padding og margin */
+  background-color: #6a00ff;
+  border: 1px solid #6a00ff;
+  color: #ffffff; /* Tekstfarve */
+  font-family: monospace; /* Skrifttype */
+  font-size: 18px; /* Skriftstørrelse */
+  padding: 10px 50px; /* Indvendig afstand */
+  border-radius: 5px; /* Runde hjørner */
+  cursor: pointer; /* Ændrer cursoren til en hånd */
+  text-align: center; /* Centrerer tekst */
+  margin-top: 30px; /* Lidt afstand til brødteksten */
+  margin-bottom: 90px;
+}
+
+.oplevelse-container {
+  margin-bottom: 20px;
+}
+
+.oplevelse-header {
+  background-color: #ffffff;
+  padding: 20px 0;
+}
+
+.oplevelse-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.oplevelse-broedtekst {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+/* Formular styling */
+.oplevelse-form {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #ffffff;
+  font-family: monospace;
+}
+
+.form-input,
+.form-textarea {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-textarea {
+  resize: none;
+}
+
+.form-button {
+  background-color: #8000ff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #6b00d9;
+}
 /* -----------------------------------------------
                     Om radar
   ----------------------------------------------- */
@@ -1019,6 +1110,21 @@ a:hover {
 .medarbejder-tekst {
   flex: 1;
   text-align: left;
+}
+/* -----------------------------------------------
+                Fejl-siden
+  ----------------------------------------------- */
+.fejl-overskrift {
+  text-align: center;
+  font-size: 200px;
+  font-family: monospace;
+}
+
+.fejl-tekst {
+  text-align: center;
+  font-size: 50px;
+  font-family: monospace;
+  font-weight: lighter;
 }
 
 /* -----------------------------------------------
