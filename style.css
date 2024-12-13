@@ -1258,7 +1258,7 @@ textarea {
 input[type='email'],
 select,
 textarea {
-  width: 100%; /* Gør de hvide bokse kortere */
+  width: 100%;
   padding: 10px;
   border: 1px solid #ffffff;
   box-sizing: border-box;
@@ -1273,22 +1273,26 @@ textarea {
   color: #ffffff;
 }
 
-input[type='submit'] {
-  width: 100%; /* Gør knappen samme bredde som de hvide bokse */
+.submit-button {
   background-color: #393838;
   border: 1px solid #9747ff;
   color: #9747ff;
-  padding: 12px 20px;
+  padding: 12px;
   border-radius: 8px;
   cursor: pointer;
   font-family: monospace;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 /*ændre knapfarve, når musen kommer over*/
-input[type='submit']:hover {
+.submit-button:hover {
   background-color: #41068e;
   color: #ffffff;
   border: 1px solid #41068e;
+  text-decoration: none;
 }
 
 /*tekst i indputboksene*/
@@ -1646,6 +1650,11 @@ input[type='submit']:hover {
     margin-left: 25px;
   }
 
+  .lillaoverskrift-frivilllig:hover {
+    transform: scale(1.1); /* Forstør med 10% */
+    text-decoration: underline;
+  }
+
   /* Højre kolonne (tekst) */
   .frivillig-broedtekst {
     text-align: left; /* Venstrestil */
@@ -1924,7 +1933,7 @@ input[type='submit']:hover {
     color: #ffffff;
   }
 
-  input[type='submit'] {
+  .submit-button {
     width: 100%; /* Gør knappen samme bredde som de hvide bokse */
     background-color: #393838;
     border: 1px solid #9747ff;
@@ -1936,7 +1945,7 @@ input[type='submit']:hover {
   }
 
   /*ændre knapfarve, når musen kommer over*/
-  input[type='submit']:hover {
+  .submit-button:hover {
     background-color: #41068e;
     color: #ffffff;
     border: 1px solid #41068e;
