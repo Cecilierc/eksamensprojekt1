@@ -67,6 +67,12 @@ body {
   color: #ffffff;
 }
 
+.topnav a:hover {
+  text-decoration: none;
+  color: #6a00ff;
+  font-weight: bolder;
+}
+
 a:hover {
   text-decoration: underline 3px;
 }
@@ -448,6 +454,10 @@ a:hover {
   text-decoration: none;
 }
 
+.concert-item:hover {
+  text-decoration: underline 1px #6a00ff;
+}
+
 /* Image styling */
 .concert-image {
   width: 100%;
@@ -740,6 +750,7 @@ a:hover {
   border-radius: 5px;
   cursor: pointer;
   font-family: monospace;
+  text-decoration: none;
 }
 
 .blog-feedback-knap {
@@ -755,7 +766,7 @@ a:hover {
 
 .blog-knap:hover,
 .blog-feedback-knap:hover {
-  background: #7c48c3;
+  background: #34007c;
   text-decoration: none;
 }
 
@@ -813,18 +824,13 @@ a:hover {
 .dinmen-broedtekst {
   font-family: Arial, Helvetica, sans-serif;
   color: #000000;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
+  margin-bottom: 70px;
 }
 
 .experience-form {
   background-color: #333;
-}
-
-.dinoplevelse-overskrift {
-  font-family: monospace;
-  color: #ffffff;
-  font-size: 20px;
 }
 
 .knap-post {
@@ -866,10 +872,13 @@ a:hover {
 .oplevelse-form {
   background-color: #333333;
   color: #ffffff;
-  padding: 20px;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  padding-left: 200px;
+  padding-right: 200px;
+  height: 200px;
   max-width: 100%;
   margin: 0 auto;
-  border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -884,13 +893,12 @@ a:hover {
 
 .form-input,
 .form-textarea {
-  width: 70%;
+  width: 100%;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #cccccc;
-  border-radius: 4px;
   font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: monospace;
 }
 
 .form-textarea {
@@ -905,10 +913,11 @@ a:hover {
   font-size: 16px;
   border-radius: 4px;
   cursor: pointer;
+  font-family: monospace;
 }
 
 .form-button:hover {
-  background-color: #6b00d9;
+  background-color: #5001a0;
 }
 /* -----------------------------------------------
                     Om radar
@@ -1087,7 +1096,7 @@ a:hover {
 }
 
 .medarbejder-opgaver {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -1102,12 +1111,14 @@ a:hover {
   font-size: 16px;
   cursor: pointer;
   font-family: monospace;
-  margin-top: 15px;
+  margin-top: 15pxpx;
+  text-decoration: none;
 }
 
 .medarbejder-knap:hover {
   background-color: #450070;
   color: white;
+  text-decoration: none;
 }
 
 /* Tekst-layout */
@@ -1630,10 +1641,9 @@ input[type='submit']:hover {
 
   /* Venstre kolonne (overskrift) */
   .lillaoverskrift-frivilllig {
-    font-size: 55px; /* Skriftstørrelse */
+    font-size: 40px; /* Skriftstørrelse */
     text-align: left;
-    margin-left: 30px;
-    margin-top: 50px;
+    margin-left: 25px;
   }
 
   /* Højre kolonne (tekst) */
@@ -1756,6 +1766,33 @@ input[type='submit']:hover {
 
   .blog-feedback-tekst {
     font-size: 25px;
+  }
+
+  /* -----------------------------------------------
+                  Din oplevelse
+  ----------------------------------------------- */
+  /* Formular styling */
+  .oplevelse-form {
+    padding-top: 50px;
+    padding-bottom: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  /* -----------------------------------------------
+                Fejl-siden
+  ----------------------------------------------- */
+  .fejl-overskrift {
+    text-align: center;
+    font-size: 150px;
+    font-family: monospace;
+  }
+
+  .fejl-tekst {
+    text-align: center;
+    font-size: 35px;
+    font-family: monospace;
+    font-weight: lighter;
   }
 
   /* -----------------------------------------------
