@@ -678,12 +678,14 @@ a:hover {
   text-align: center; /* Centrerer tekst */
   margin-top: 30px; /* Lidt afstand til brødteksten */
   margin-bottom: 90px;
+  text-decoration: none;
 }
 
 /* Hover-effekt til knappen */
 .frivillig-lilla-button:hover {
   background-color: #41068e; /* Ændrer baggrundsfarve ved hover */
   color: #ffffff; /* Sørger for, at tekstfarven forbliver hvid */
+  text-decoration: none;
 }
 
 .knap-farver {
@@ -945,6 +947,7 @@ a:hover {
   cursor: pointer; /* Ændrer cursoren til en hånd */
   text-align: center; /* Centrerer tekst */
   margin-top: 30px; /* Lidt afstand til brødteksten */
+  text-decoration: none;
 }
 
 /* Hover-effekt til knappen */
@@ -952,6 +955,7 @@ a:hover {
   justify-items: center;
   background-color: #5c008e; /* Ændrer baggrundsfarve ved hover */
   color: #ffffff; /* Sørger for, at tekstfarven forbliver hvid */
+  text-decoration: none;
 }
 
 .omradar-farver {
