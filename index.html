@@ -1,48 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Radar</title>
     <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- Header navigation -->
     <header>
-      <nav class="topnav">
-        <a href="index.html">
-          <img src="img/logo-png.png" alt="nav_logo" class="nav_logo" />
-          <img src="img/logo-png-tele.png" alt="nav_logo_tele" class="nav_logo_tele" />
-        </a>
+        <nav class="topnav">
+            <a href="index.html">
+                <img src="img/logo-png.png" alt="nav_logo" class="nav_logo" />
+                <img src="img/logo-png-tele.png" alt="nav_logo_tele" class="nav_logo_tele" />
+            </a>
 
-        <div class="burger-menu" onclick="toggleMenu()">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
 
-        <div class="nav-links" id="navLinks">
-          <div class="close-menu" onclick="toggleMenu()">x</div>
-          <!-- Close Button -->
-          <a href="events.html">Events</a>
-          <a href="frivillig.html">Frivillig</a>
-          <a href="blog.html">Blog</a>
-          <a href="omradar.html">Om Radar</a>
-        </div>
-      </nav>
-      <script>
-        function toggleMenu() {
-          const navLinks = document.getElementById('navLinks');
-          navLinks.classList.toggle('menu-open');
-        }
-      </script>
+            <div class="nav-links" id="navLinks">
+                <div class="close-menu" onclick="toggleMenu()">x</div>
+                <!-- Close Button -->
+                <a href="events.html">Events</a>
+                <a href="frivillig.html">Frivillig</a>
+                <a href="blog.html">Blog</a>
+                <a href="omradar.html">Om Radar</a>
+            </div>
+        </nav>
+        <script>
+            function toggleMenu() {
+                const navLinks = document.getElementById('navLinks');
+                navLinks.classList.toggle('menu-open');
+            }
+        </script>
     </header>
 
     <!-- Forside billede -->
-    <img
-      src="img/start-forside.jpg"
-      alt="Radar, spillested i Aarhus"
-      class="forsidebillede" />
+    <img src="img/start-forside.jpg" alt="Radar, spillested i Aarhus" class="forsidebillede" />
 
     <!-- Pil til scroll ned -->
     <section class="text_overlay">
@@ -51,123 +50,116 @@
     </section>
 
     <!-- Velkommen -->
-     <h1 class="overskrift-forside">VELKOMMEN TIL RADAR</h1>
-    
+    <h1 class="overskrift-forside">VELKOMMEN TIL RADAR</h1>
+
     <section class="forside-broedtekst">
-        Radar er Aarhus’ regionale spillested, hvor nichekunstnere møder publikum i en atmosfære præget af sammenhold, kreativitet og kærlighed til musikken. Vi præsenterer alt fra intime koncerter til store oplevelser, hvor grænserne for genrer udfordres og udforskes. Vores frivillige er hjertet i fællesskabet, og sammen skaber vi uforglemmelige koncertoplevelser. 
-        Kom og vær en del af noget helt særligt – hos Radar er der plads til både kunstnere og publikum, der søger det ekstraordinære.
+        Radar er Aarhus’ regionale spillested, hvor nichekunstnere møder publikum i en atmosfære præget af sammenhold,
+        kreativitet og kærlighed til musikken. Vi præsenterer alt fra intime koncerter til store oplevelser, hvor
+        grænserne for genrer udfordres og udforskes. Vores frivillige er hjertet i fællesskabet, og sammen skaber vi
+        uforglemmelige koncertoplevelser.
+        Kom og vær en del af noget helt særligt – hos Radar er der plads til både kunstnere og publikum, der søger det
+        ekstraordinære.
     </section>
 
     <section class="container-farver-forside">
         <div class="left-content">
-          <h2 class="hvid-forside-graf-overskrift">FRIVILLIG</h2>
-          <p class="boks-broedtekst">
-            Elsker du musik og vil være med til at skabe <br> 
-            unikke koncertoplevelser? Som frivillig hos <br>
-            Radar bliver du en del af et engageret team, <br>
-            der brænder for fællesskab og kreativitet. <br>
-            <br>
-            Klik her og læs mere om, hvordan du kan blive <br>
-            en del af holdet!
-        </p>
+            <h2 class="hvid-forside-graf-overskrift">FRIVILLIG</h2>
+            <p class="boks-broedtekst">
+                Elsker du musik og vil være med til at skabe <br>
+                unikke koncertoplevelser? Som frivillig hos <br>
+                Radar bliver du en del af et engageret team, <br>
+                der brænder for fællesskab og kreativitet. <br>
+                <br>
+                Klik her og læs mere om, hvordan du kan blive <br>
+                en del af holdet!
+            </p>
             <a href="frivillig.html" class="boks-button">LÆS MERE</a>
         </div>
         <div class="right-content">
-          <img class="boks-billede" src="img/forside-frivillig.jpg" alt="Frivilligt arbejde for unge Aarhus" />
+            <img class="boks-billede" src="img/forside-frivillig.jpg" alt="Frivilligt arbejde for unge Aarhus" />
         </div>
     </section>
 
     <section class="event-container">
         <h2 class="event-overskrift">KOMMENDE EVENTS:</h2>
         <div class="event">
-          <div class="event-image">
-            <img class="kommendeevents-billede" src="img/kommende-events.jpg" alt="Kommende events">
-          </div>
-          <div class="event-details">
-            <h3 class="event-overskrift2">ELBA [SUPPORT: GIDDY GOYE]</h3>
-            <p class="event-broedtekst">
-              TORSDAG D. 27. DECEMBER 2024<br />
-              50 / 95 DKK
-            </p>
-            <a href="elba.html" class="event-knap">SE MERE</a>
-          </div>
+            <div class="event-image">
+                <img class="kommendeevents-billede" src="img/kommende-events.jpg" alt="Kommende events">
+            </div>
+            <div class="event-details">
+                <h3 class="event-overskrift2">ELBA [SUPPORT: GIDDY GOYE]</h3>
+                <p class="event-broedtekst">
+                    TORSDAG D. 27. DECEMBER 2024<br />
+                    50 / 95 DKK
+                </p>
+                <a href="elba.html" class="event-knap">SE MERE</a>
+            </div>
         </div>
     </section>
 
     <section class="container-grå-forside">
         <div class="left-grå-content">
-          <h2 class="farvede-forside-graf-overskrift">DEL DIN OPLEVELSE</h2>
-          <p class="boks-grå-broedtekst">
-            Dyk ned i Radars blog, hvor kunstnere, <br> 
-            frivillige og gæster deler deres historier, <br>
-            holdninger og oplevelser. Få et unikt indblik i <br>
-            livet bag scenen og fællesskabet, der gør  <br>
-            Radar helt speciel.  <br>
-            <br>
-            Klik her og læs med eller skriv dit eget! <br>
-        </p>
+            <h2 class="farvede-forside-graf-overskrift">DEL DIN OPLEVELSE</h2>
+            <p class="boks-grå-broedtekst">
+                Dyk ned i Radars blog, hvor kunstnere, <br>
+                frivillige og gæster deler deres historier, <br>
+                holdninger og oplevelser. Få et unikt indblik i <br>
+                livet bag scenen og fællesskabet, der gør <br>
+                Radar helt speciel. <br>
+                <br>
+                Klik her og læs med eller skriv dit eget! <br>
+            </p>
             <a href="blog.html" class="boks-grå-button">LÆS MERE</a>
         </div>
         <div class="right-grå-content">
-          <img class="boks-billede-blog" src="img/blog-forside.jpg" alt="Meninger og anmeldelser om Radar" />
+            <img class="boks-billede-blog" src="img/blog-forside.jpg" alt="Meninger og anmeldelser om Radar" />
         </div>
     </section>
 
     <section class="forside-afslutning">
         <p>VI GLÆDER OS TIL AT SE DIG, <br> HOS
-            <a class="lilla-link-forside" href="omradar.html">RADAR</a>       
+            <a class="lilla-link-forside" href="omradar.html">RADAR</a>
             VED GODSBANEN.</p>
     </section>
 
     <!-- Footer -->
     <footer class="site_footer">
-      <div class="footer_container">
-        <div class="footer_text_columns">
-          <div class="footer-column">
-            <h3 class="nyhed-overskrift">TILMELD NYHEDSBREV</h3>
-            <br />
-            <form action="/action_page.php">
-              <!-- Felt til navn, skal udfyldes -->
-              <input
-                class="i_box"
-                type="text"
-                id="fname"
-                name="firstname"
-                placeholder="Dit navn"
-                required />
-              <!-- Kræver udfyldelse -->
+        <div class="footer_container">
+            <div class="footer_text_columns">
+                <div class="footer-column">
+                    <h3 class="nyhed-overskrift">TILMELD NYHEDSBREV</h3>
+                    <br />
+                    <form action="/action_page.php">
+                        <!-- Felt til navn, skal udfyldes -->
+                        <input class="i_box" type="text" id="fname" name="firstname" placeholder="Dit navn" required />
+                        <!-- Kræver udfyldelse -->
 
-              <!-- Felt til e-mail, skal have et @ -->
-              <input
-                class="i_box"
-                type="email"
-                id="lname"
-                name="e-mail"
-                placeholder="Din e-mail"
-                required />
-              <!-- Kræver udfyldelse -->
-              <a href="email.html" type="submit" class="submit-button">TILMELD</a>
-            </form>
-          </div>
-          <div class="footer-column">
-            <a class="link-footer" href="omradar.html">RADAR</a>
-            <br/>
-            <br>
-            <p>
-              Karen Wegeners Gade 6<br />
-              <br />DK 8000 Aarhus C<br />
-              <br />Telefon +45 8676 0344
-            </p>
-          </div>
+                        <!-- Felt til e-mail, skal have et @ -->
+                        <input class="i_box" type="email" id="lname" name="e-mail" placeholder="Din e-mail" required />
+                        <!-- Kræver udfyldelse -->
+                        <a href="email.html" type="submit" class="submit-button">TILMELD</a>
+                    </form>
+                </div>
+                <div class="footer-column">
+                    <a class="link-footer" href="omradar.html">RADAR</a>
+                    <br />
+                    <br>
+                    <p>
+                        Karen Wegeners Gade 6<br />
+                        <br />DK 8000 Aarhus C<br />
+                        <br />Telefon +45 8676 0344
+                    </p>
+                </div>
 
-          <div class="footer-column">
-            <h3 class="footer-overskrift">FØLG OS</h3>
-            <section class="sociale">
-            <a class="socialemedier" href="https://www.instagram.com/radarlive/">Instagram</a>
-            <a class="socialemedier" href="https://www.facebook.com/radarlive">Facebook</a>
-            <a class="socialemedier" href="https://www.youtube.com/user/radarliverec">Youtube</a>
-            </section>
-          </div>
+                <div class="footer-column">
+                    <h3 class="footer-overskrift">FØLG OS</h3>
+                    <section class="sociale">
+                        <a class="socialemedier" href="https://www.instagram.com/radarlive/">Instagram</a>
+                        <a class="socialemedier" href="https://www.facebook.com/radarlive">Facebook</a>
+                        <a class="socialemedier" href="https://www.youtube.com/user/radarliverec">Youtube</a>
+                    </section>
+                </div>
     </footer>
-  </body>
+</body>
+
 </html>

@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Radar</title>
     <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- Header navigation -->
     <header>
-      <nav class="topnav">
-        <a href="index.html">
-          <img src="img/logo-png.png" alt="nav_logo" class="nav_logo" />
-          <img src="img/logo-png-tele.png" alt="nav_logo_tele" class="nav_logo_tele" />
-        </a>
+        <nav class="topnav">
+            <a href="index.html">
+                <img src="img/logo-png.png" alt="nav_logo" class="nav_logo" />
+                <img src="img/logo-png-tele.png" alt="nav_logo_tele" class="nav_logo_tele" />
+            </a>
 
-        <div class="burger-menu" onclick="toggleMenu()">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
 
-        <div class="nav-links" id="navLinks">
-          <div class="close-menu" onclick="toggleMenu()">x</div>
-          <!-- Close Button -->
-          <a href="events.html">Events</a>
-          <a href="frivillig.html">Frivillig</a>
-          <a href="blog.html">Blog</a>
-          <a href="omradar.html">Om Radar</a>
-        </div>
-      </nav>
-      <script>
-        function toggleMenu() {
-          const navLinks = document.getElementById('navLinks');
-          navLinks.classList.toggle('menu-open');
-        }
-      </script>
+            <div class="nav-links" id="navLinks">
+                <div class="close-menu" onclick="toggleMenu()">x</div>
+                <!-- Close Button -->
+                <a href="events.html">Events</a>
+                <a href="frivillig.html">Frivillig</a>
+                <a href="blog.html">Blog</a>
+                <a href="omradar.html">Om Radar</a>
+            </div>
+        </nav>
+        <script>
+            function toggleMenu() {
+                const navLinks = document.getElementById('navLinks');
+                navLinks.classList.toggle('menu-open');
+            }
+        </script>
     </header>
 
     <!-- Forside billede -->
-    <img
-      src="img/start-frivillig.jpg"
-      alt="Vær frivilllig på radar og få nogle gode personalefordele"
-      class="forsidebillede" />
+    <img src="img/start-frivillig.jpg" alt="Vær frivilllig på radar og få nogle gode personalefordele"
+        class="forsidebillede" />
 
     <!-- Pil til scroll ned -->
     <section class="text_overlay">
@@ -52,14 +52,14 @@
 
     <!-- Hvad er radar -->
     <section class="frivillig-tekst">
-     <a href="blivfrivillig.html" class="lillaoverskrift-frivilllig">BLIV FRIVILLIG</a>
+        <a href="blivfrivillig.html" class="lillaoverskrift-frivilllig">BLIV FRIVILLIG</a>
         <p class="frivillig-broedtekst">
             Elsker du musik og vil være med til at skabe unikke <br>
-            koncertoplevelser? Som frivillig hos Radar bliver du en del  <br>
-            af et engageret team, der brænder for fællesskab og  <br>
-            kreativitet.  <br>
+            koncertoplevelser? Som frivillig hos Radar bliver du en del <br>
+            af et engageret team, der brænder for fællesskab og <br>
+            kreativitet. <br>
             <br>
-            Klik her og læs mere om, hvordan du kan blive en del af  <br>
+            Klik her og læs mere om, hvordan du kan blive en del af <br>
             holdet!
         </p>
     </section>
@@ -67,26 +67,26 @@
     <!-- Hvem er vi -->
     <section class="frivillig-grå">
         <h1 class="grafoverskrift-frivillig">FAQ</h1>
-           <p class="frivillig-broedtekst-grå">
-                Har du spørgsmål om frivilligt arbejde hos Radar? I vores FAQ finder du svar på alt  <br>
-                fra opgaver og arbejdstider til de fordele, du får som frivillig.  <br>
-               <br>
-                Klik her og bliv klogere på, hvordan du kan blive en del af fællesskabet!
-           </p>
-           <div class="knap-farver">
-               <a href="faq.html" class="frivillig-lilla-button">FIND SVAR</a>
-           </div>
-       </section>
+        <p class="frivillig-broedtekst-grå">
+            Har du spørgsmål om frivilligt arbejde hos Radar? I vores FAQ finder du svar på alt <br>
+            fra opgaver og arbejdstider til de fordele, du får som frivillig. <br>
+            <br>
+            Klik her og bliv klogere på, hvordan du kan blive en del af fællesskabet!
+        </p>
+        <div class="knap-farver">
+            <a href="faq.html" class="frivillig-lilla-button">FIND SVAR</a>
+        </div>
+    </section>
 
     <!-- Hvor er vi -->
-     
+
     <section class="frivillig-tekst">
         <a href="defrivillige.html" class="lillaoverskrift-frivilllig">MØD DE FRIVILLIGE</a>
         <p class="frivillig-broedtekst">
-            Bag hver koncert står vores fantastiske frivillige, der gør   <br>
-            Radar til noget helt særligt.  <br>
+            Bag hver koncert står vores fantastiske frivillige, der gør <br>
+            Radar til noget helt særligt. <br>
             <br>
-            Klik her og mød nogle af de ansigter, der skaber  <br>
+            Klik her og mød nogle af de ansigter, der skaber <br>
             fællesskabet, stemningen og de fede oplevelser. Bliv <br>
             inspireret af deres historier og engagement – og se, <br>
             hvordan de gør en forskel!
@@ -96,53 +96,42 @@
 
     <!-- Footer -->
     <footer class="site_footer">
-      <div class="footer_container">
-        <div class="footer_text_columns">
-          <div class="footer-column">
-            <h3 class="nyhed-overskrift">TILMELD NYHEDSBREV</h3>
-            <br />
-            <form action="/action_page.php">
-              <!-- Felt til navn, skal udfyldes -->
-              <input
-                class="i_box"
-                type="text"
-                id="fname"
-                name="firstname"
-                placeholder="Dit navn"
-                required />
-              <!-- Kræver udfyldelse -->
+        <div class="footer_container">
+            <div class="footer_text_columns">
+                <div class="footer-column">
+                    <h3 class="nyhed-overskrift">TILMELD NYHEDSBREV</h3>
+                    <br />
+                    <form action="/action_page.php">
+                        <!-- Felt til navn, skal udfyldes -->
+                        <input class="i_box" type="text" id="fname" name="firstname" placeholder="Dit navn" required />
+                        <!-- Kræver udfyldelse -->
 
-              <!-- Felt til e-mail, skal have et @ -->
-              <input
-                class="i_box"
-                type="email"
-                id="lname"
-                name="e-mail"
-                placeholder="Din e-mail"
-                required />
-              <!-- Kræver udfyldelse -->
-              <a href="email.html" type="submit" class="submit-button">TILMELD</a>
-            </form>
-          </div>
-          <div class="footer-column">
-            <a class="link-footer" href="omradar.html">RADAR</a>
-            <br/>
-            <br>
-            <p>
-              Karen Wegeners Gade 6<br />
-              <br />DK 8000 Aarhus C<br />
-              <br />Telefon +45 8676 0344
-            </p>
-          </div>
+                        <!-- Felt til e-mail, skal have et @ -->
+                        <input class="i_box" type="email" id="lname" name="e-mail" placeholder="Din e-mail" required />
+                        <!-- Kræver udfyldelse -->
+                        <a href="email.html" type="submit" class="submit-button">TILMELD</a>
+                    </form>
+                </div>
+                <div class="footer-column">
+                    <a class="link-footer" href="omradar.html">RADAR</a>
+                    <br />
+                    <br>
+                    <p>
+                        Karen Wegeners Gade 6<br />
+                        <br />DK 8000 Aarhus C<br />
+                        <br />Telefon +45 8676 0344
+                    </p>
+                </div>
 
-          <div class="footer-column">
-            <h3 class="footer-overskrift">FØLG OS</h3>
-            <section class="sociale">
-            <a class="socialemedier" href="https://www.instagram.com/radarlive/">Instagram</a>
-            <a class="socialemedier" href="https://www.facebook.com/radarlive">Facebook</a>
-            <a class="socialemedier" href="https://www.youtube.com/user/radarliverec">Youtube</a>
-            </section>
-          </div>
+                <div class="footer-column">
+                    <h3 class="footer-overskrift">FØLG OS</h3>
+                    <section class="sociale">
+                        <a class="socialemedier" href="https://www.instagram.com/radarlive/">Instagram</a>
+                        <a class="socialemedier" href="https://www.facebook.com/radarlive">Facebook</a>
+                        <a class="socialemedier" href="https://www.youtube.com/user/radarliverec">Youtube</a>
+                    </section>
+                </div>
     </footer>
-  </body>
+</body>
+
 </html>

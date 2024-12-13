@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Radar</title>
     <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- Header navigation -->
     <header>
-      <nav class="topnav">
-        <a href="index.html">
-          <img src="img/logo-png.png" alt="nav_logo" class="nav_logo" />
-          <img src="img/logo-png-tele.png" alt="nav_logo_tele" class="nav_logo_tele" />
-        </a>
+        <nav class="topnav">
+            <a href="index.html">
+                <img src="img/logo-png.png" alt="nav_logo" class="nav_logo" />
+                <img src="img/logo-png-tele.png" alt="nav_logo_tele" class="nav_logo_tele" />
+            </a>
 
-        <div class="burger-menu" onclick="toggleMenu()">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
 
-        <div class="nav-links" id="navLinks">
-          <div class="close-menu" onclick="toggleMenu()">x</div>
-          <!-- Close Button -->
-          <a href="events.html">Events</a>
-          <a href="frivillig.html">Frivillig</a>
-          <a href="blog.html">Blog</a>
-          <a href="omradar.html">Om Radar</a>
-        </div>
-      </nav>
-      <script>
-        function toggleMenu() {
-          const navLinks = document.getElementById('navLinks');
-          navLinks.classList.toggle('menu-open');
-        }
-      </script>
+            <div class="nav-links" id="navLinks">
+                <div class="close-menu" onclick="toggleMenu()">x</div>
+                <!-- Close Button -->
+                <a href="events.html">Events</a>
+                <a href="frivillig.html">Frivillig</a>
+                <a href="blog.html">Blog</a>
+                <a href="omradar.html">Om Radar</a>
+            </div>
+        </nav>
+        <script>
+            function toggleMenu() {
+                const navLinks = document.getElementById('navLinks');
+                navLinks.classList.toggle('menu-open');
+            }
+        </script>
     </header>
 
     <section class="oplevelse-container">
@@ -52,69 +54,59 @@
         <label for="name" class="form-label">FORTÆL OS OM DIN OPLEVELSE:</label>
         <input type="text" id="name" class="form-input" name="name" placeholder="Dit navn" required>
         <input type="email" id="email" class="form-input" name="email" placeholder="Din e-mail" required>
-        <textarea id="experience" class="form-textarea" name="experience" placeholder="Skriv om din oplevelse her..." rows="6" required></textarea>
+        <textarea id="experience" class="form-textarea" name="experience" placeholder="Skriv om din oplevelse her..."
+            rows="6" required></textarea>
         <button type="submit" class="form-button">POST</button>
     </form>
 
     <section class="forside-afslutning">
         <p>TILBAGE TIL
-            <a class="lilla-link-forside" href="blog.html">BLOGGEN</a>       
+            <a class="lilla-link-forside" href="blog.html">BLOGGEN</a>
         </p>
     </section>
-        
 
 
 
-   
+
+
     <!-- Footer -->
     <footer class="site_footer">
-      <div class="footer_container">
-        <div class="footer_text_columns">
-          <div class="footer-column">
-            <h3 class="nyhed-overskrift">TILMELD NYHEDSBREV</h3>
-            <br />
-            <form action="/action_page.php">
-              <!-- Felt til navn, skal udfyldes -->
-              <input
-                class="i_box"
-                type="text"
-                id="fname"
-                name="firstname"
-                placeholder="Dit navn"
-                required />
-              <!-- Kræver udfyldelse -->
+        <div class="footer_container">
+            <div class="footer_text_columns">
+                <div class="footer-column">
+                    <h3 class="nyhed-overskrift">TILMELD NYHEDSBREV</h3>
+                    <br />
+                    <form action="/action_page.php">
+                        <!-- Felt til navn, skal udfyldes -->
+                        <input class="i_box" type="text" id="fname" name="firstname" placeholder="Dit navn" required />
+                        <!-- Kræver udfyldelse -->
 
-              <!-- Felt til e-mail, skal have et @ -->
-              <input
-                class="i_box"
-                type="email"
-                id="lname"
-                name="e-mail"
-                placeholder="Din e-mail"
-                required />
-              <!-- Kræver udfyldelse -->
-              <a href="email.html" type="submit" class="submit-button">TILMELD</a>
-            </form>
-          </div>
-          <div class="footer-column">
-            <a class="link-footer" href="omradar.html">RADAR</a>
-            <br/>
-            <br>
-            <p>
-              Karen Wegeners Gade 6<br />
-              <br />DK 8000 Aarhus C<br />
-              <br />Telefon +45 8676 0344
-            </p>
-          </div>
+                        <!-- Felt til e-mail, skal have et @ -->
+                        <input class="i_box" type="email" id="lname" name="e-mail" placeholder="Din e-mail" required />
+                        <!-- Kræver udfyldelse -->
+                        <a href="email.html" type="submit" class="submit-button">TILMELD</a>
+                    </form>
+                </div>
+                <div class="footer-column">
+                    <a class="link-footer" href="omradar.html">RADAR</a>
+                    <br />
+                    <br>
+                    <p>
+                        Karen Wegeners Gade 6<br />
+                        <br />DK 8000 Aarhus C<br />
+                        <br />Telefon +45 8676 0344
+                    </p>
+                </div>
 
-          <div class="footer-column">
-            <h3 class="footer-overskrift">FØLG OS</h3>
-            <section class="sociale">
-            <a class="socialemedier" href="https://www.instagram.com/radarlive/">Instagram</a>
-            <a class="socialemedier" href="https://www.facebook.com/radarlive">Facebook</a>
-            <a class="socialemedier" href="https://www.youtube.com/user/radarliverec">Youtube</a>
-            </section>
-          </div>
+                <div class="footer-column">
+                    <h3 class="footer-overskrift">FØLG OS</h3>
+                    <section class="sociale">
+                        <a class="socialemedier" href="https://www.instagram.com/radarlive/">Instagram</a>
+                        <a class="socialemedier" href="https://www.facebook.com/radarlive">Facebook</a>
+                        <a class="socialemedier" href="https://www.youtube.com/user/radarliverec">Youtube</a>
+                    </section>
+                </div>
     </footer>
-  </body>
+</body>
+
 </html>

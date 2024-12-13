@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Radar</title>
     <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- Header navigation -->
     <header>
-      <nav class="topnav">
-        <a href="index.html">
-          <img src="img/logo-png.png" alt="nav_logo" class="nav_logo" />
-          <img src="img/logo-png-tele.png" alt="nav_logo_tele" class="nav_logo_tele" />
-        </a>
+        <nav class="topnav">
+            <a href="index.html">
+                <img src="img/logo-png.png" alt="nav_logo" class="nav_logo" />
+                <img src="img/logo-png-tele.png" alt="nav_logo_tele" class="nav_logo_tele" />
+            </a>
 
-        <div class="burger-menu" onclick="toggleMenu()">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
 
-        <div class="nav-links" id="navLinks">
-          <div class="close-menu" onclick="toggleMenu()">x</div>
-          <!-- Close Button -->
-          <a href="events.html">Events</a>
-          <a href="frivillig.html">Frivillig</a>
-          <a href="blog.html">Blog</a>
-          <a href="omradar.html">Om Radar</a>
-        </div>
-      </nav>
-      <script>
-        function toggleMenu() {
-          const navLinks = document.getElementById('navLinks');
-          navLinks.classList.toggle('menu-open');
-        }
-      </script>
+            <div class="nav-links" id="navLinks">
+                <div class="close-menu" onclick="toggleMenu()">x</div>
+                <!-- Close Button -->
+                <a href="events.html">Events</a>
+                <a href="frivillig.html">Frivillig</a>
+                <a href="blog.html">Blog</a>
+                <a href="omradar.html">Om Radar</a>
+            </div>
+        </nav>
+        <script>
+            function toggleMenu() {
+                const navLinks = document.getElementById('navLinks');
+                navLinks.classList.toggle('menu-open');
+            }
+        </script>
     </header>
 
     <div class="elba-container">
@@ -55,25 +57,29 @@
         <section class="elba-description-section">
             <h2 class="elba-description-title">Elba på Radar – Foråret 2024</h2>
             <p class="elba-description-text">
-                Oplev en af Danmarks mest lovende popartister, når Elba indtager scenen med sin catchy og kontrastfyldte indiepop. 
+                Oplev en af Danmarks mest lovende popartister, når Elba indtager scenen med sin catchy og kontrastfyldte
+                indiepop.
                 Med stærk vokal og personlige tekster skaber hun musik, der rører og fanger.
             </p>
-            
+
             <h3 class="elba-description-title">Anmelderrost Talent</h3>
             <p class="elba-description-text">
-                P3-vært Ena Cosovic beskrev debutalbummet *Teardrops & Blind Spots* som "fuldstændig fantastisk" med gåsehudsfremkaldende 
+                P3-vært Ena Cosovic beskrev debutalbummet *Teardrops & Blind Spots* som "fuldstændig fantastisk" med
+                gåsehudsfremkaldende
                 melodier og en unik inderlighed.
             </p>
 
             <h3 class="elba-description-title">Energi og Følelser på Scenen</h3>
             <p class="elba-description-text">
-                Elbas musik er en blanding af sårbarhed og festlig energi, hvor hun udforsker emner som stress, sexisme og selvkærlighed. 
+                Elbas musik er en blanding af sårbarhed og festlig energi, hvor hun udforsker emner som stress, sexisme
+                og selvkærlighed.
                 På scenen leverer hun uforglemmelige oplevelser – blandt andet anerkendt med stjerner fra GAFFA.
             </p>
 
             <h3 class="elba-description-title">Fra Roskilde til Radar</h3>
             <p class="elba-description-text">
-                Med optrædener på Roskilde, SPOT og Smukfest har Elba slået sit navn fast som en stærk live-performer. Hendes sange roterer 
+                Med optrædener på Roskilde, SPOT og Smukfest har Elba slået sit navn fast som en stærk live-performer.
+                Hendes sange roterer
                 på P3 og P4 og topper Spotify-playlister som New Music Friday og Equal Danmark.
             </p>
 
@@ -86,12 +92,9 @@
     <section class="elba-video-section">
         <h2 class="elba-video-title">HØR ELBA:</h2>
         <div class="elba-video-container">
-            <iframe 
-                class="elba-video-embed" 
-                src="https://www.youtube.com/embed/hYocLJ41gcQ?autoplay=1&mute=1" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            <iframe class="elba-video-embed" src="https://www.youtube.com/embed/hYocLJ41gcQ?autoplay=1&mute=1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
             </iframe>
         </div>
@@ -99,70 +102,59 @@
 
     <section class="omradar-farver">
         <h1 class="grafoverskrift-omradar">SKAF DIN BILLET</h1>
-           <p class="omradar-broedtekst-farver">
-                Køb nemt billet her! Husk at oplys dit studiekort, <br>
-                hvis du skal have en studiebillet <br>
-           </p>
-           <div class="knap-farver">
-               <a class="omradar-button-farver" href="koeb.html">KØB HER</a>
-           </div>
+        <p class="omradar-broedtekst-farver">
+            Køb nemt billet her! Husk at oplys dit studiekort, <br>
+            hvis du skal have en studiebillet <br>
+        </p>
+        <div class="knap-farver">
+            <a class="omradar-button-farver" href="koeb.html">KØB HER</a>
+        </div>
     </section>
 
     <section class="forside-afslutning">
         <p>TILBAGE TIL
-            <a class="lilla-link-forside" href="events.html">EVENTKALENDER</a>       
+            <a class="lilla-link-forside" href="events.html">EVENTKALENDER</a>
         </p>
     </section>
-   
+
     <!-- Footer -->
     <footer class="site_footer">
-      <div class="footer_container">
-        <div class="footer_text_columns">
-          <div class="footer-column">
-            <h3 class="nyhed-overskrift">TILMELD NYHEDSBREV</h3>
-            <br />
-            <form action="/action_page.php">
-              <!-- Felt til navn, skal udfyldes -->
-              <input
-                class="i_box"
-                type="text"
-                id="fname"
-                name="firstname"
-                placeholder="Dit navn"
-                required />
-              <!-- Kræver udfyldelse -->
+        <div class="footer_container">
+            <div class="footer_text_columns">
+                <div class="footer-column">
+                    <h3 class="nyhed-overskrift">TILMELD NYHEDSBREV</h3>
+                    <br />
+                    <form action="/action_page.php">
+                        <!-- Felt til navn, skal udfyldes -->
+                        <input class="i_box" type="text" id="fname" name="firstname" placeholder="Dit navn" required />
+                        <!-- Kræver udfyldelse -->
 
-              <!-- Felt til e-mail, skal have et @ -->
-              <input
-                class="i_box"
-                type="email"
-                id="lname"
-                name="e-mail"
-                placeholder="Din e-mail"
-                required />
-              <!-- Kræver udfyldelse -->
-              <a href="email.html" type="submit" class="submit-button">TILMELD</a>
-            </form>
-          </div>
-          <div class="footer-column">
-            <a class="link-footer" href="omradar.html">RADAR</a>
-            <br/>
-            <br>
-            <p>
-              Karen Wegeners Gade 6<br />
-              <br />DK 8000 Aarhus C<br />
-              <br />Telefon +45 8676 0344
-            </p>
-          </div>
+                        <!-- Felt til e-mail, skal have et @ -->
+                        <input class="i_box" type="email" id="lname" name="e-mail" placeholder="Din e-mail" required />
+                        <!-- Kræver udfyldelse -->
+                        <a href="email.html" type="submit" class="submit-button">TILMELD</a>
+                    </form>
+                </div>
+                <div class="footer-column">
+                    <a class="link-footer" href="omradar.html">RADAR</a>
+                    <br />
+                    <br>
+                    <p>
+                        Karen Wegeners Gade 6<br />
+                        <br />DK 8000 Aarhus C<br />
+                        <br />Telefon +45 8676 0344
+                    </p>
+                </div>
 
-          <div class="footer-column">
-            <h3 class="footer-overskrift">FØLG OS</h3>
-            <section class="sociale">
-            <a class="socialemedier" href="https://www.instagram.com/radarlive/">Instagram</a>
-            <a class="socialemedier" href="https://www.facebook.com/radarlive">Facebook</a>
-            <a class="socialemedier" href="https://www.youtube.com/user/radarliverec">Youtube</a>
-            </section>
-          </div>
+                <div class="footer-column">
+                    <h3 class="footer-overskrift">FØLG OS</h3>
+                    <section class="sociale">
+                        <a class="socialemedier" href="https://www.instagram.com/radarlive/">Instagram</a>
+                        <a class="socialemedier" href="https://www.facebook.com/radarlive">Facebook</a>
+                        <a class="socialemedier" href="https://www.youtube.com/user/radarliverec">Youtube</a>
+                    </section>
+                </div>
     </footer>
-  </body>
+</body>
+
 </html>

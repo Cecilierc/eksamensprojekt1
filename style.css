@@ -53,7 +53,8 @@ body {
 }
 
 .nav_logo_tele {
-  display: none; /* Skjul mobil-logo på store skærme */
+  display: none;
+  /* Skjul mobil-logo på store skærme */
 }
 
 .topnav a {
@@ -126,30 +127,36 @@ a:hover {
 }
 
 .text_overlay {
-  position: absolute; /* Positionerer teksten oven på billedet */
-  top: 95%; /* Justér denne værdi for at flytte teksten op/ned */
+  position: absolute;
+  /* Positionerer teksten oven på billedet */
+  top: 95%;
+  /* Justér denne værdi for at flytte teksten op/ned */
   left: 50%;
   width: 100%;
-  transform: translate(
-    -50%,
-    -50%
-  ); /* Flytter teksten, så den er præcis i midten */
-  text-align: center; /* Højrejusterer teksten */
-  z-index: 1; /* Sørger for, at teksten er ovenpå billedet */
-  padding: 10px; /* Lidt padding for at give plads omkring teksten */
+  transform: translate(-50%, -50%);
+  /* Flytter teksten, så den er præcis i midten */
+  text-align: center;
+  /* Højrejusterer teksten */
+  z-index: 1;
+  /* Sørger for, at teksten er ovenpå billedet */
+  padding: 10px;
+  /* Lidt padding for at give plads omkring teksten */
 }
 
 .overskrift-forside {
   background: linear-gradient(to bottom, #6a00ff, #e63312);
-  -webkit-background-clip: text; /* Brug gradienten som baggrund for teksten */
-  color: transparent; /* Gør teksten gennemsigtig, så kun gradienten er synlig */
+  -webkit-background-clip: text;
+  /* Brug gradienten som baggrund for teksten */
+  color: transparent;
+  /* Gør teksten gennemsigtig, så kun gradienten er synlig */
   font-family: a Attack Graffiti;
   text-align: center;
   margin-top: 150px;
   font-size: 100px;
 
   /* Mellemrum mellem hver bogstav */
-  letter-spacing: 8px; /* Juster værdien for at få ønsket afstand */
+  letter-spacing: 8px;
+  /* Juster værdien for at få ønsket afstand */
 }
 
 .forside-broedtekst {
@@ -165,15 +172,16 @@ a:hover {
 /* ------------------------Frivillig container--------------------------- */
 /* Container, der dækker hele bredden */
 .container-farver-forside {
-  display: flex; /* Brug Flexbox til at arrangere elementerne */
-  align-items: center; /* Centrerer elementerne vertikalt */
-  width: auto; /* Fylder 100% af bredden */
-  padding: 20px; /* Lidt padding omkring indholdet */
-  background: linear-gradient(
-    to bottom,
-    #6a00ff,
-    #e63312
-  ); /* color-gradient fra rød til lilla */
+  display: flex;
+  /* Brug Flexbox til at arrangere elementerne */
+  align-items: center;
+  /* Centrerer elementerne vertikalt */
+  width: auto;
+  /* Fylder 100% af bredden */
+  padding: 20px;
+  /* Lidt padding omkring indholdet */
+  background: linear-gradient(to bottom, #6a00ff, #e63312);
+  /* color-gradient fra rød til lilla */
   opacity: 90%;
   height: 550px;
 }
@@ -195,43 +203,58 @@ a:hover {
 
 /* Styling til knappen */
 .boks-button {
-  display: inline-block; /* Sørger for, at knappen kan have padding og margin */
+  display: inline-block;
+  /* Sørger for, at knappen kan have padding og margin */
   background-color: transparent;
   border: 1px solid #ffffff;
-  color: #ffffff; /* Tekstfarve */
-  font-family: monospace; /* Skrifttype */
-  font-size: 16px; /* Skriftstørrelse */
-  padding: 8px 20px; /* Indvendig afstand */
-  border-radius: 5px; /* Runde hjørner */
-  cursor: pointer; /* Ændrer cursoren til en hånd */
-  text-align: center; /* Centrerer tekst */
-  margin-top: 30px; /* Lidt afstand til brødteksten */
+  color: #ffffff;
+  /* Tekstfarve */
+  font-family: monospace;
+  /* Skrifttype */
+  font-size: 16px;
+  /* Skriftstørrelse */
+  padding: 8px 20px;
+  /* Indvendig afstand */
+  border-radius: 5px;
+  /* Runde hjørner */
+  cursor: pointer;
+  /* Ændrer cursoren til en hånd */
+  text-align: center;
+  /* Centrerer tekst */
+  margin-top: 30px;
+  /* Lidt afstand til brødteksten */
   text-decoration: none;
 }
 
 /* Hover-effekt til knappen */
 .boks-button:hover {
-  background-color: #8909cd; /* Ændrer baggrundsfarve ved hover */
-  color: #ffffff; /* Sørger for, at tekstfarven forbliver hvid */
+  background-color: #8909cd;
+  /* Ændrer baggrundsfarve ved hover */
+  color: #ffffff;
+  /* Sørger for, at tekstfarven forbliver hvid */
   text-decoration: none;
 }
 
 /* Venstre indhold */
 .left-content {
-  width: 50%; /* Giver venstre side 50% af bredden */
+  width: 50%;
+  /* Giver venstre side 50% af bredden */
   margin: 50px;
   text-align: center;
 }
 
 /* Højre indhold */
 .right-content {
-  width: 50%; /* Giver højre side 50% af bredden */
+  width: 50%;
+  /* Giver højre side 50% af bredden */
   margin: 50px;
 }
 
 .boks-billede {
-  max-width: 90%; /* Gør billedet responsivt, så det fylder højre side */
-  height: auto; /* Bevarer billedets proportioner */
+  max-width: 90%;
+  /* Gør billedet responsivt, så det fylder højre side */
+  height: auto;
+  /* Bevarer billedets proportioner */
 }
 
 /* ------------------------Kommende events container--------------------------- */
@@ -258,14 +281,16 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px; /* Lidt plads mellem elementer */
+  gap: 20px;
+  /* Lidt plads mellem elementer */
   border-radius: 8px;
 }
 
 /* Venstre sektion (billedet) */
 .event-image {
   flex: 1;
-  height: 250px; /* Fast højde */
+  height: 250px;
+  /* Fast højde */
   background-size: cover;
   background-position: center;
 }
@@ -276,7 +301,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px; /* Afstand mellem elementer */
+  gap: 10px;
+  /* Afstand mellem elementer */
   padding-top: 200px;
 }
 
@@ -318,18 +344,25 @@ a:hover {
 /* ------------------------Blog container--------------------------- */
 /* Container, der dækker hele bredden */
 .container-grå-forside {
-  display: flex; /* Brug Flexbox til at arrangere elementerne */
-  align-items: center; /* Centrerer elementerne vertikalt */
-  width: auto; /* Fylder 100% af bredden */
-  padding: 20px; /* Lidt padding omkring indholdet */
-  background: #393838; /* color-gradient fra rød til lilla */
+  display: flex;
+  /* Brug Flexbox til at arrangere elementerne */
+  align-items: center;
+  /* Centrerer elementerne vertikalt */
+  width: auto;
+  /* Fylder 100% af bredden */
+  padding: 20px;
+  /* Lidt padding omkring indholdet */
+  background: #393838;
+  /* color-gradient fra rød til lilla */
   height: 550px;
 }
 
 .farvede-forside-graf-overskrift {
   background: linear-gradient(to bottom, #6a00ff, #e63312);
-  -webkit-background-clip: text; /* Brug gradienten som baggrund for teksten */
-  color: transparent; /* Gør teksten gennemsigtig, så kun gradienten er synlig */
+  -webkit-background-clip: text;
+  /* Brug gradienten som baggrund for teksten */
+  color: transparent;
+  /* Gør teksten gennemsigtig, så kun gradienten er synlig */
   font-family: a Attack Graffiti;
   font-size: 90px;
   letter-spacing: 5px;
@@ -345,43 +378,58 @@ a:hover {
 
 /* Styling til knappen */
 .boks-grå-button {
-  display: inline-block; /* Sørger for, at knappen kan have padding og margin */
+  display: inline-block;
+  /* Sørger for, at knappen kan have padding og margin */
   background-color: transparent;
   border: 1px solid #ffffff;
-  color: #ffffff; /* Tekstfarve */
-  font-family: monospace; /* Skrifttype */
-  font-size: 16px; /* Skriftstørrelse */
-  padding: 8px 20px; /* Indvendig afstand */
-  border-radius: 5px; /* Runde hjørner */
-  cursor: pointer; /* Ændrer cursoren til en hånd */
-  text-align: center; /* Centrerer tekst */
-  margin-top: 30px; /* Lidt afstand til brødteksten */
+  color: #ffffff;
+  /* Tekstfarve */
+  font-family: monospace;
+  /* Skrifttype */
+  font-size: 16px;
+  /* Skriftstørrelse */
+  padding: 8px 20px;
+  /* Indvendig afstand */
+  border-radius: 5px;
+  /* Runde hjørner */
+  cursor: pointer;
+  /* Ændrer cursoren til en hånd */
+  text-align: center;
+  /* Centrerer tekst */
+  margin-top: 30px;
+  /* Lidt afstand til brødteksten */
   text-decoration: none;
 }
 
 /* Hover-effekt til knappen */
 .boks-grå-button:hover {
-  background-color: #8909cd; /* Ændrer baggrundsfarve ved hover */
-  color: #ffffff; /* Sørger for, at tekstfarven forbliver hvid */
+  background-color: #8909cd;
+  /* Ændrer baggrundsfarve ved hover */
+  color: #ffffff;
+  /* Sørger for, at tekstfarven forbliver hvid */
   text-decoration: none;
 }
 
 /* Venstre indhold */
 .left-grå-content {
-  width: 50%; /* Giver venstre side 50% af bredden */
+  width: 50%;
+  /* Giver venstre side 50% af bredden */
   margin: 50px;
   text-align: center;
 }
 
 /* Højre indhold */
 .right-grå-content {
-  width: 50%; /* Giver højre side 50% af bredden */
+  width: 50%;
+  /* Giver højre side 50% af bredden */
   margin: 50px;
 }
 
 .boks-billede-boks {
-  max-width: 150%; /* Gør billedet responsivt, så det fylder højre side */
-  height: auto; /* Bevarer billedets proportioner */
+  max-width: 150%;
+  /* Gør billedet responsivt, så det fylder højre side */
+  height: auto;
+  /* Bevarer billedets proportioner */
 }
 
 /* ------------------------Afsluttende kommentar--------------------------- */
@@ -437,7 +485,8 @@ a:hover {
 /* Grid layout for January */
 .concert-grid-two-columns {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-template-columns: repeat(2, 1fr);
+  /* Two columns */
   gap: 20px;
   margin-bottom: 40px;
   margin-left: 30px;
@@ -516,9 +565,12 @@ a:hover {
 }
 
 .elba-concert-image {
-  width: 100%; /* Gør billedet responsivt */
-  max-width: 1200px; /* Maksimal bredde */
-  height: auto; /* Bevarer proportionerne */
+  width: 100%;
+  /* Gør billedet responsivt */
+  max-width: 1200px;
+  /* Maksimal bredde */
+  height: auto;
+  /* Bevarer proportionerne */
 }
 
 /* Information */
@@ -530,7 +582,8 @@ a:hover {
   color: #6e5dff;
   font-size: 1.2rem;
   max-width: 1200px;
-  margin: 20px auto; /* Centrer teksten */
+  margin: 20px auto;
+  /* Centrer teksten */
 }
 
 .elba-date,
@@ -541,9 +594,12 @@ a:hover {
 /* Beskrivelse */
 .elba-description-section {
   margin-top: 20px;
-  width: 100%; /* Få teksten til at fylde hele bredden */
-  max-width: 1200px; /* Samme max bredde som billedet */
-  margin: 20px auto; /* Centrer sektionen */
+  width: 100%;
+  /* Få teksten til at fylde hele bredden */
+  max-width: 1200px;
+  /* Samme max bredde som billedet */
+  margin: 20px auto;
+  /* Centrer sektionen */
 }
 
 .elba-description-title {
@@ -584,18 +640,23 @@ a:hover {
   font-family: monospace;
   font-weight: lighter;
   margin-bottom: 20px;
-  text-align: left; /* Juster til venstre */
-  max-width: 800px; /* Match videoens bredde */
-  margin: 0 auto 10px auto; /* Centrer sektionen, men juster tekst til venstre */
+  text-align: left;
+  /* Juster til venstre */
+  max-width: 800px;
+  /* Match videoens bredde */
+  margin: 0 auto 10px auto;
+  /* Centrer sektionen, men juster tekst til venstre */
 }
 
 .elba-video-container {
   position: relative;
   width: 100%;
-  max-width: 800px; /* Maksimal bredde for video */
+  max-width: 800px;
+  /* Maksimal bredde for video */
   margin: 0 auto;
   overflow: hidden;
-  padding-top: 56.25%; /* Aspect ratio 16:9 */
+  padding-top: 56.25%;
+  /* Aspect ratio 16:9 */
 }
 
 .elba-video-embed {
@@ -612,55 +673,72 @@ a:hover {
   ----------------------------------------------- */
 /* Sektionen for frivillig-tekst */
 .frivillig-tekst {
-  display: flex; /* Brug flexbox til at arrangere elementer vandret */
-  justify-content: center; /* Centrerer indholdet horisontalt */
-  align-items: center; /* Justerer indholdet til toppen */
-  gap: 20px; /* Afstand mellem kolonnerne */
-  padding: 120px 20px; /* Indvendig afstand */
+  display: flex;
+  /* Brug flexbox til at arrangere elementer vandret */
+  justify-content: center;
+  /* Centrerer indholdet horisontalt */
+  align-items: center;
+  /* Justerer indholdet til toppen */
+  gap: 20px;
+  /* Afstand mellem kolonnerne */
+  padding: 120px 20px;
+  /* Indvendig afstand */
 }
 
 .lillaoverskrift-frivilllig:hover {
-  transform: scale(1.1); /* Forstør med 10% */
+  transform: scale(1.1);
+  /* Forstør med 10% */
   text-decoration: none;
 }
 
 /* Venstre kolonne (overskrift) */
 .lillaoverskrift-frivilllig {
-  flex: 50%; /* Fylder en del af bredden */
+  flex: 50%;
+  /* Fylder en del af bredden */
   font-family: monospace;
-  color: #8909cd; /* Lilla farve */
-  font-size: 80px; /* Skriftstørrelse */
+  color: #8909cd;
+  /* Lilla farve */
+  font-size: 80px;
+  /* Skriftstørrelse */
   font-weight: lighter;
   text-align: right;
-  margin: 0; /* Fjern standard margin */
+  margin: 0;
+  /* Fjern standard margin */
   text-decoration: none;
 }
 
 /* Højre kolonne (tekst) */
 .frivillig-broedtekst {
-  flex: 50%; /* Fylder to dele af bredden */
-  font-family: Arial, sans-serif; /* Standard skrifttype */
-  font-size: 14px; /* Skift størrelse */
-  color: #333; /* Mørkegrå farve */
-  line-height: 1.6; /* Gør teksten lettere at læse */
-  text-align: left; /* Venstrestil */
-  margin: 0; /* Fjern standard margin */
+  flex: 50%;
+  /* Fylder to dele af bredden */
+  font-family: Arial, sans-serif;
+  /* Standard skrifttype */
+  font-size: 14px;
+  /* Skift størrelse */
+  color: #333;
+  /* Mørkegrå farve */
+  line-height: 1.6;
+  /* Gør teksten lettere at læse */
+  text-align: left;
+  /* Venstrestil */
+  margin: 0;
+  /* Fjern standard margin */
 }
 
 /* ------------------------Grå boks--------------------------- */
 .frivillig-grå {
-  background: #393838; /* color-gradient fra rød til lilla */
+  background: #393838;
+  /* color-gradient fra rød til lilla */
 }
 
 .grafoverskrift-frivillig {
   font-family: a Attack Graffiti;
-  background: linear-gradient(
-    to bottom,
-    #6a00ff,
-    #e63312
-  ); /* color-gradient fra rød til lilla */
-  -webkit-background-clip: text; /* Brug gradienten som baggrund for teksten */
-  color: transparent; /* Gør teksten gennemsigtig, så kun gradienten er synlig */
+  background: linear-gradient(to bottom, #6a00ff, #e63312);
+  /* color-gradient fra rød til lilla */
+  -webkit-background-clip: text;
+  /* Brug gradienten som baggrund for teksten */
+  color: transparent;
+  /* Gør teksten gennemsigtig, så kun gradienten er synlig */
   font-weight: 300;
   font-size: 100px;
   text-align: center;
@@ -676,30 +754,42 @@ a:hover {
 }
 
 .frivillig-lilla-button {
-  display: inline-block; /* Sørger for, at knappen kan have padding og margin */
+  display: inline-block;
+  /* Sørger for, at knappen kan have padding og margin */
   background-color: #6a00ff;
   border: 1px solid #6a00ff;
-  color: #ffffff; /* Tekstfarve */
-  font-family: monospace; /* Skrifttype */
-  font-size: 18px; /* Skriftstørrelse */
-  padding: 10px 50px; /* Indvendig afstand */
-  border-radius: 5px; /* Runde hjørner */
-  cursor: pointer; /* Ændrer cursoren til en hånd */
-  text-align: center; /* Centrerer tekst */
-  margin-top: 30px; /* Lidt afstand til brødteksten */
+  color: #ffffff;
+  /* Tekstfarve */
+  font-family: monospace;
+  /* Skrifttype */
+  font-size: 18px;
+  /* Skriftstørrelse */
+  padding: 10px 50px;
+  /* Indvendig afstand */
+  border-radius: 5px;
+  /* Runde hjørner */
+  cursor: pointer;
+  /* Ændrer cursoren til en hånd */
+  text-align: center;
+  /* Centrerer tekst */
+  margin-top: 30px;
+  /* Lidt afstand til brødteksten */
   margin-bottom: 90px;
   text-decoration: none;
 }
 
 /* Hover-effekt til knappen */
 .frivillig-lilla-button:hover {
-  background-color: #41068e; /* Ændrer baggrundsfarve ved hover */
-  color: #ffffff; /* Sørger for, at tekstfarven forbliver hvid */
+  background-color: #41068e;
+  /* Ændrer baggrundsfarve ved hover */
+  color: #ffffff;
+  /* Sørger for, at tekstfarven forbliver hvid */
   text-decoration: none;
 }
 
 .knap-farver {
-  text-align: center; /* Sørger for, at indholdet inde i div bliver centreret */
+  text-align: center;
+  /* Sørger for, at indholdet inde i div bliver centreret */
 }
 
 /* -----------------------------------------------
@@ -772,18 +862,21 @@ a:hover {
 
 /* Feedback sektion */
 .blog-feedback {
-  background: linear-gradient(
-    to bottom,
-    #6a00ff,
-    #e63312
-  ); /* color-gradient fra rød til lilla */
+  background: linear-gradient(to bottom, #6a00ff, #e63312);
+  /* color-gradient fra rød til lilla */
   color: white;
-  text-align: center; /* Centrerer teksten horisontalt */
-  display: flex; /* Gør sektionen til en fleksibel container */
-  flex-direction: column; /* Arrangerer indholdet lodret */
-  justify-content: center; /* Centrerer indholdet lodret */
-  align-items: center; /* Centrerer indholdet horisontalt */
-  padding: 20px; /* Giver lidt afstand rundt om indholdet */
+  text-align: center;
+  /* Centrerer teksten horisontalt */
+  display: flex;
+  /* Gør sektionen til en fleksibel container */
+  flex-direction: column;
+  /* Arrangerer indholdet lodret */
+  justify-content: center;
+  /* Centrerer indholdet lodret */
+  align-items: center;
+  /* Centrerer indholdet horisontalt */
+  padding: 20px;
+  /* Giver lidt afstand rundt om indholdet */
 }
 
 .blog-feedback-titel {
@@ -834,17 +927,26 @@ a:hover {
 }
 
 .knap-post {
-  display: inline-block; /* Sørger for, at knappen kan have padding og margin */
+  display: inline-block;
+  /* Sørger for, at knappen kan have padding og margin */
   background-color: #6a00ff;
   border: 1px solid #6a00ff;
-  color: #ffffff; /* Tekstfarve */
-  font-family: monospace; /* Skrifttype */
-  font-size: 18px; /* Skriftstørrelse */
-  padding: 10px 50px; /* Indvendig afstand */
-  border-radius: 5px; /* Runde hjørner */
-  cursor: pointer; /* Ændrer cursoren til en hånd */
-  text-align: center; /* Centrerer tekst */
-  margin-top: 30px; /* Lidt afstand til brødteksten */
+  color: #ffffff;
+  /* Tekstfarve */
+  font-family: monospace;
+  /* Skrifttype */
+  font-size: 18px;
+  /* Skriftstørrelse */
+  padding: 10px 50px;
+  /* Indvendig afstand */
+  border-radius: 5px;
+  /* Runde hjørner */
+  cursor: pointer;
+  /* Ændrer cursoren til en hånd */
+  text-align: center;
+  /* Centrerer tekst */
+  margin-top: 30px;
+  /* Lidt afstand til brødteksten */
   margin-bottom: 90px;
 }
 
@@ -919,6 +1021,7 @@ a:hover {
 .form-button:hover {
   background-color: #5001a0;
 }
+
 /* -----------------------------------------------
                     Om radar
   ----------------------------------------------- */
@@ -945,34 +1048,42 @@ a:hover {
 }
 
 .omradar-lilla-button {
-  display: inline-block; /* Sørger for, at knappen kan have padding og margin */
+  display: inline-block;
+  /* Sørger for, at knappen kan have padding og margin */
   background-color: #6a00ff;
   border: 1px solid #ffffff;
-  color: #ffffff; /* Tekstfarve */
-  font-family: monospace; /* Skrifttype */
-  font-size: 18px; /* Skriftstørrelse */
-  padding: 15px 40px; /* Indvendig afstand */
-  border-radius: 5px; /* Runde hjørner */
-  cursor: pointer; /* Ændrer cursoren til en hånd */
-  text-align: center; /* Centrerer tekst */
-  margin-top: 30px; /* Lidt afstand til brødteksten */
+  color: #ffffff;
+  /* Tekstfarve */
+  font-family: monospace;
+  /* Skrifttype */
+  font-size: 18px;
+  /* Skriftstørrelse */
+  padding: 15px 40px;
+  /* Indvendig afstand */
+  border-radius: 5px;
+  /* Runde hjørner */
+  cursor: pointer;
+  /* Ændrer cursoren til en hånd */
+  text-align: center;
+  /* Centrerer tekst */
+  margin-top: 30px;
+  /* Lidt afstand til brødteksten */
   text-decoration: none;
 }
 
 /* Hover-effekt til knappen */
 .omradar-lilla-button:hover {
   justify-items: center;
-  background-color: #5c008e; /* Ændrer baggrundsfarve ved hover */
-  color: #ffffff; /* Sørger for, at tekstfarven forbliver hvid */
+  background-color: #5c008e;
+  /* Ændrer baggrundsfarve ved hover */
+  color: #ffffff;
+  /* Sørger for, at tekstfarven forbliver hvid */
   text-decoration: none;
 }
 
 .omradar-farver {
-  background: linear-gradient(
-    to bottom,
-    #6a00ff,
-    #e63312
-  ); /* color-gradient fra rød til lilla */
+  background: linear-gradient(to bottom, #6a00ff, #e63312);
+  /* color-gradient fra rød til lilla */
   margin-top: 90px;
   margin-bottom: 90px;
 }
@@ -995,31 +1106,44 @@ a:hover {
 }
 
 .omradar-button-farver {
-  display: inline-block; /* Sørger for, at knappen kan have padding og margin */
+  display: inline-block;
+  /* Sørger for, at knappen kan have padding og margin */
   background-color: transparent;
   border: 1px solid #ffffff;
-  color: #ffffff; /* Tekstfarve */
-  font-family: monospace; /* Skrifttype */
-  font-size: 18px; /* Skriftstørrelse */
-  padding: 15px 40px; /* Indvendig afstand */
-  border-radius: 5px; /* Runde hjørner */
-  cursor: pointer; /* Ændrer cursoren til en hånd */
-  text-align: center; /* Centrerer tekst */
-  margin-top: 30px; /* Lidt afstand til brødteksten */
+  color: #ffffff;
+  /* Tekstfarve */
+  font-family: monospace;
+  /* Skrifttype */
+  font-size: 18px;
+  /* Skriftstørrelse */
+  padding: 15px 40px;
+  /* Indvendig afstand */
+  border-radius: 5px;
+  /* Runde hjørner */
+  cursor: pointer;
+  /* Ændrer cursoren til en hånd */
+  text-align: center;
+  /* Centrerer tekst */
+  margin-top: 30px;
+  /* Lidt afstand til brødteksten */
   margin-bottom: 90px;
   text-decoration: none;
 }
 
 /* Hover-effekt til knappen */
 .omradar-button-farver:hover {
-  background-color: #5c008e; /* Ændrer baggrundsfarve ved hover */
-  color: #ffffff; /* Sørger for, at tekstfarven forbliver hvid */
+  background-color: #5c008e;
+  /* Ændrer baggrundsfarve ved hover */
+  color: #ffffff;
+  /* Sørger for, at tekstfarven forbliver hvid */
   text-decoration: none;
 }
 
 .knap-farver {
-  text-align: center; /* Sørger for, at indholdet inde i div bliver centreret */
+  text-align: center;
+  /* Sørger for, at indholdet inde i div bliver centreret */
 }
+
 /* -----------------------------------------------
                 Hvem er vi
   ----------------------------------------------- */
@@ -1048,11 +1172,8 @@ a:hover {
 
 /* Medarbejderkort */
 .medarbejder-kort {
-  background: linear-gradient(
-    to bottom,
-    #6a00ff,
-    #e63312
-  ); /* color-gradient fra rød til lilla */
+  background: linear-gradient(to bottom, #6a00ff, #e63312);
+  /* color-gradient fra rød til lilla */
   color: white;
   padding: 20px;
   text-align: center;
@@ -1062,11 +1183,8 @@ a:hover {
 }
 
 .medarbejder-kort-frivillige {
-  background: linear-gradient(
-    to bottom,
-    #6a00ff,
-    #e63312
-  ); /* color-gradient fra rød til lilla */
+  background: linear-gradient(to bottom, #6a00ff, #e63312);
+  /* color-gradient fra rød til lilla */
   color: white;
   padding: 20px;
   text-align: center;
@@ -1074,8 +1192,10 @@ a:hover {
   align-items: center;
   overflow: hidden;
   width: 80%;
-  grid-column: span 2; /* Sørg for, at det frivillige kort fylder to kolonner */
-  width: auto; /* Fjern den faste bredde */
+  grid-column: span 2;
+  /* Sørg for, at det frivillige kort fylder to kolonner */
+  width: auto;
+  /* Fjern den faste bredde */
   margin-bottom: 50px;
 }
 
@@ -1126,6 +1246,18 @@ a:hover {
   flex: 1;
   text-align: left;
 }
+
+/* -----------------------------------------------
+                Hvor er vi
+----------------------------------------------- */
+.hvor-tekst {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
 /* -----------------------------------------------
                 Fejl-siden
   ----------------------------------------------- */
@@ -1146,40 +1278,52 @@ a:hover {
                         Footer
   ----------------------------------------------- */
 .site_footer {
-  background-color: #393838; /* Grå baggrund */
-  padding: 20px; /* Lidt padding for at give plads */
-  width: auto; /* Strækker footeren over hele sidens bredde */
+  background-color: #393838;
+  /* Grå baggrund */
+  padding: 20px;
+  /* Lidt padding for at give plads */
+  width: auto;
+  /* Strækker footeren over hele sidens bredde */
 }
 
 /*container for footeren*/
 .footer_container {
-  display: flex; /* Brug flexbox til at arrangere elementer i rækken */
-  align-items: center; /* Centrerer elementerne vertikalt */
+  display: flex;
+  /* Brug flexbox til at arrangere elementer i rækken */
+  align-items: center;
+  /* Centrerer elementerne vertikalt */
   justify-content: space-evenly;
-  padding: 0 2%; /* Indrykker til venstre og højre */
+  padding: 0 2%;
+  /* Indrykker til venstre og højre */
 }
 
 /*tekstkolonnerne*/
 .footer_text_columns {
   display: flex;
-  width: 95%; /* Juster bredden, så tekstkolonnerne ikke fylder for meget */
-  justify-content: space-between; /* Fordel plads mellem kolonnerne */
+  width: 95%;
+  /* Juster bredden, så tekstkolonnerne ikke fylder for meget */
+  justify-content: space-between;
+  /* Fordel plads mellem kolonnerne */
 }
 
 /*kollonnernes fordeling*/
 .footer-column {
   width: 100%;
-  padding: 60px 30px; /* Tilføjer lidt padding mellem kolonnerne */
+  padding: 60px 30px;
+  /* Tilføjer lidt padding mellem kolonnerne */
   text-decoration: none;
-  color: #ffffff; /* Justér farven på tekst */
+  color: #ffffff;
+  /* Justér farven på tekst */
   align-items: center;
 }
 
 /* Style for sociale links */
 .sociale {
   display: flex;
-  flex-direction: column; /* Sørger for, at linksene vises under hinanden */
-  gap: 18px; /* Tilføj lidt afstand mellem hvert link */
+  flex-direction: column;
+  /* Sørger for, at linksene vises under hinanden */
+  gap: 18px;
+  /* Tilføj lidt afstand mellem hvert link */
 }
 
 /*kollonne overskrift*/
@@ -1216,7 +1360,8 @@ a:hover {
 }
 
 .socialemedier {
-  font-size: 13px; /* Mindre skrifttype til tekstindhold */
+  font-size: 13px;
+  /* Mindre skrifttype til tekstindhold */
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
@@ -1227,24 +1372,28 @@ a:hover {
 
 /*hover-effekt (streg under, når musen kommer over, hvis ønsket*/
 .footer-column a:hover {
-  text-decoration: underline; /* Tilføj en understregning ved hover, hvis ønsket */
+  text-decoration: underline;
+  /* Tilføj en understregning ved hover, hvis ønsket */
 }
 
 /* For at justere "RADAR"-kolonnen til højre */
 .footer-column:nth-child(2) {
-  margin-left: 10%; /* Flyt "RADAR"-kolonnen til højre */
+  margin-left: 10%;
+  /* Flyt "RADAR"-kolonnen til højre */
 }
 
 /* For at justere "FØLG OS"-kolonnen til højre */
 .footer-column:nth-child(3) {
-  margin-left: 10%; /* Flyt "FØLG OS"-kolonnen til højre */
+  margin-left: 10%;
+  /* Flyt "FØLG OS"-kolonnen til højre */
 }
 
 /*--------------Nyhedsboksen------------*/
 input[type='text'],
 select,
 textarea {
-  width: 100%; /* Gør de hvide bokse kortere */
+  width: 100%;
+  /* Gør de hvide bokse kortere */
   padding: 10px;
   border: 1px solid #ffffff;
   box-sizing: border-box;
@@ -1317,15 +1466,18 @@ textarea {
     width: auto;
     height: 90px;
     padding-top: 15px;
-    display: block; /* Vis mobil-logo på små skærme */
+    display: block;
+    /* Vis mobil-logo på små skærme */
   }
 
   .nav-links {
-    display: none; /* Gem nav links på mobil */
+    display: none;
+    /* Gem nav links på mobil */
   }
 
   .burger-menu {
-    display: block; /* Vis burger-menuikon på mobil */
+    display: block;
+    /* Vis burger-menuikon på mobil */
   }
 
   /* Styling af åben menu */
@@ -1336,11 +1488,8 @@ textarea {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(
-      to bottom,
-      #6a00ff,
-      #e63312
-    ); /* color-gradient fra rød til lilla */
+    background: linear-gradient(to bottom, #6a00ff, #e63312);
+    /* color-gradient fra rød til lilla */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1352,9 +1501,11 @@ textarea {
     color: #ffffff;
     font-size: 70px;
     font-weight: bold;
-    text-align: center; /* Centrér tekst horisontalt */
+    text-align: center;
+    /* Centrér tekst horisontalt */
     text-decoration: none;
-    width: 100%; /* Få linksene til at strække sig over hele bredden */
+    width: 100%;
+    /* Få linksene til at strække sig over hele bredden */
     padding: 10px 0;
   }
 
@@ -1381,14 +1532,17 @@ textarea {
     list-style-type: none;
     padding: 0;
     margin-top: 20px;
-    display: none; /* Oprindeligt skjult */
+    display: none;
+    /* Oprindeligt skjult */
     flex-direction: column;
     gap: 10px;
-    text-align: center; /* Centre submenu */
+    text-align: center;
+    /* Centre submenu */
   }
 
   .sub-menu.show {
-    display: flex; /* Vis undermenu, når den er slået til/fra */
+    display: flex;
+    /* Vis undermenu, når den er slået til/fra */
   }
 
   .sub-menu a {
@@ -1408,7 +1562,8 @@ textarea {
     font-size: 70px;
 
     /* Mellemrum mellem hver bogstav */
-    letter-spacing: 4px; /* Juster værdien for at få ønsket afstand */
+    letter-spacing: 4px;
+    /* Juster værdien for at få ønsket afstand */
   }
 
   .forside-broedtekst {
@@ -1424,10 +1579,14 @@ textarea {
   /* ------------------------Frivillig container--------------------------- */
   /* Container, der dækker hele bredden */
   .container-farver-forside {
-    display: table-row; /* Brug Flexbox til at arrangere elementerne */
-    align-items: center; /* Centrerer elementerne vertikalt */
-    width: auto; /* Fylder 100% af bredden */
-    padding: 20px; /* Lidt padding omkring indholdet */
+    display: table-row;
+    /* Brug Flexbox til at arrangere elementerne */
+    align-items: center;
+    /* Centrerer elementerne vertikalt */
+    width: auto;
+    /* Fylder 100% af bredden */
+    padding: 20px;
+    /* Lidt padding omkring indholdet */
     height: 500px;
   }
 
@@ -1450,16 +1609,21 @@ textarea {
 
   /* Styling til knappen */
   .boks-button {
-    display: flex; /* Sørger for, at knappen kan have padding og margin */
+    display: flex;
+    /* Sørger for, at knappen kan have padding og margin */
     margin-left: 155px;
-    text-align: center; /* Centrerer tekst */
-    margin-top: 30px; /* Lidt afstand til brødteksten */
+    text-align: center;
+    /* Centrerer tekst */
+    margin-top: 30px;
+    /* Lidt afstand til brødteksten */
   }
 
   /* Hover-effekt til knappen */
   .boks-button:hover {
-    background-color: #620793; /* Ændrer baggrundsfarve ved hover */
-    color: #ffffff; /* Sørger for, at tekstfarven forbliver hvid */
+    background-color: #620793;
+    /* Ændrer baggrundsfarve ved hover */
+    color: #ffffff;
+    /* Sørger for, at tekstfarven forbliver hvid */
   }
 
   /* Venstre indhold */
@@ -1470,13 +1634,16 @@ textarea {
 
   /* Højre indhold */
   .right-content {
-    width: 50%; /* Giver højre side 50% af bredden */
+    width: 50%;
+    /* Giver højre side 50% af bredden */
     margin: 50px;
   }
 
   .boks-billede {
-    max-width: 150%; /* Gør billedet responsivt, så det fylder højre side */
-    height: auto; /* Bevarer billedets proportioner */
+    max-width: 150%;
+    /* Gør billedet responsivt, så det fylder højre side */
+    height: auto;
+    /* Bevarer billedets proportioner */
     align-items: center;
   }
 
@@ -1503,14 +1670,16 @@ textarea {
     display: table-row;
     align-items: center;
     justify-content: space-between;
-    gap: 20px; /* Lidt plads mellem elementer */
+    gap: 20px;
+    /* Lidt plads mellem elementer */
     border-radius: 8px;
   }
 
   /* Venstre sektion (billedet) */
   .event-image {
     flex: 1;
-    height: 250px; /* Fast højde */
+    height: 250px;
+    /* Fast højde */
     background-size: cover;
     background-position: center;
   }
@@ -1525,7 +1694,8 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px; /* Afstand mellem elementer */
+    gap: 10px;
+    /* Afstand mellem elementer */
     padding-top: 150px;
   }
 
@@ -1559,10 +1729,14 @@ textarea {
   /* ------------------------Blog container--------------------------- */
   /* Container, der dækker hele bredden */
   .container-grå-forside {
-    display: table-row; /* Brug Flexbox til at arrangere elementerne */
-    align-items: center; /* Centrerer elementerne vertikalt */
-    width: auto; /* Fylder 100% af bredden */
-    padding: 20px; /* Lidt padding omkring indholdet */
+    display: table-row;
+    /* Brug Flexbox til at arrangere elementerne */
+    align-items: center;
+    /* Centrerer elementerne vertikalt */
+    width: auto;
+    /* Fylder 100% af bredden */
+    padding: 20px;
+    /* Lidt padding omkring indholdet */
     height: 500px;
   }
 
@@ -1585,16 +1759,21 @@ textarea {
 
   /* Styling til knappen */
   .boks-grå-button {
-    display: flex; /* Sørger for, at knappen kan have padding og margin */
+    display: flex;
+    /* Sørger for, at knappen kan have padding og margin */
     margin-left: 155px;
-    text-align: center; /* Centrerer tekst */
-    margin-top: 30px; /* Lidt afstand til brødteksten */
+    text-align: center;
+    /* Centrerer tekst */
+    margin-top: 30px;
+    /* Lidt afstand til brødteksten */
   }
 
   /* Hover-effekt til knappen */
   .boks-grå-button:hover {
-    background-color: #620793; /* Ændrer baggrundsfarve ved hover */
-    color: #ffffff; /* Sørger for, at tekstfarven forbliver hvid */
+    background-color: #620793;
+    /* Ændrer baggrundsfarve ved hover */
+    color: #ffffff;
+    /* Sørger for, at tekstfarven forbliver hvid */
   }
 
   /* Venstre indhold */
@@ -1605,13 +1784,16 @@ textarea {
 
   /* Højre indhold */
   .right-grå-content {
-    width: 50%; /* Giver højre side 50% af bredden */
+    width: 50%;
+    /* Giver højre side 50% af bredden */
     margin: 50px;
   }
 
   .boks-billede-blog {
-    max-width: 150%; /* Gør billedet responsivt, så det fylder højre side */
-    height: auto; /* Bevarer billedets proportioner */
+    max-width: 150%;
+    /* Gør billedet responsivt, så det fylder højre side */
+    height: auto;
+    /* Bevarer billedets proportioner */
     align-items: center;
   }
 
@@ -1629,44 +1811,57 @@ textarea {
   }
 
   .concert-grid-two-columns {
-    grid-template-columns: 1fr; /* One column on smaller screens */
+    grid-template-columns: 1fr;
+    /* One column on smaller screens */
   }
+
   /*----------------------------------------------- 
                     Frivillig
   ----------------------------------------------- */
   /* Sektionen for frivillig-tekst */
   .frivillig-tekst {
-    display: table-row; /* Brug flexbox til at arrangere elementer vandret */
-    justify-content: center; /* Centrerer indholdet horisontalt */
-    align-items: center; /* Justerer indholdet til toppen */
-    gap: 20px; /* Afstand mellem kolonnerne */
-    padding: 120px 20px; /* Indvendig afstand */
+    display: table-row;
+    /* Brug flexbox til at arrangere elementer vandret */
+    justify-content: center;
+    /* Centrerer indholdet horisontalt */
+    align-items: center;
+    /* Justerer indholdet til toppen */
+    gap: 20px;
+    /* Afstand mellem kolonnerne */
+    padding: 120px 20px;
+    /* Indvendig afstand */
   }
 
   /* Venstre kolonne (overskrift) */
   .lillaoverskrift-frivilllig {
-    font-size: 40px; /* Skriftstørrelse */
+    font-size: 40px;
+    /* Skriftstørrelse */
     text-align: left;
     margin-left: 25px;
   }
 
   .lillaoverskrift-frivilllig:hover {
-    transform: scale(1.1); /* Forstør med 10% */
+    transform: scale(1.1);
+    /* Forstør med 10% */
     text-decoration: underline;
   }
 
   /* Højre kolonne (tekst) */
   .frivillig-broedtekst {
-    text-align: left; /* Venstrestil */
+    text-align: left;
+    /* Venstrestil */
     margin-left: 30px;
     margin-bottom: 50px;
   }
 
   /* ------------------------Grå boks--------------------------- */
   .frivillig-grå {
-    background: #393838; /* color-gradient fra rød til lilla */
-    justify-content: center; /* Centrerer horisontalt */
-    align-items: center; /* Centrerer vertikalt */
+    background: #393838;
+    /* color-gradient fra rød til lilla */
+    justify-content: center;
+    /* Centrerer horisontalt */
+    align-items: center;
+    /* Centrerer vertikalt */
   }
 
   .frivillig-broedtekst-grå {
@@ -1679,7 +1874,8 @@ textarea {
                     Hvem er vi
   ----------------------------------------------- */
   .medarbejder-kort-frivillige {
-    grid-column: span 1; /* Gør det til én kolonne på små skærme */
+    grid-column: span 1;
+    /* Gør det til én kolonne på små skærme */
   }
 
   .medarbejder-billede {
@@ -1689,6 +1885,7 @@ textarea {
     margin-right: 20px;
     object-fit: cover;
   }
+
   /* -----------------------------------------------
                     Om radar
   ----------------------------------------------- */
@@ -1702,7 +1899,8 @@ textarea {
   }
 
   .omradar-lilla-button {
-    padding: 10px 40px; /* Indvendig afstand */
+    padding: 10px 40px;
+    /* Indvendig afstand */
   }
 
   .grafoverskrift-omradar {
@@ -1714,28 +1912,40 @@ textarea {
   }
 
   .omradar-button-farver {
-    display: inline-block; /* Sørger for, at knappen kan have padding og margin */
+    display: inline-block;
+    /* Sørger for, at knappen kan have padding og margin */
     background-color: transparent;
     border: 1px solid #ffffff;
-    color: #ffffff; /* Tekstfarve */
-    font-family: monospace; /* Skrifttype */
-    font-size: 18px; /* Skriftstørrelse */
-    padding: 10px 45px; /* Indvendig afstand */
-    border-radius: 5px; /* Runde hjørner */
-    cursor: pointer; /* Ændrer cursoren til en hånd */
-    text-align: center; /* Centrerer tekst */
-    margin-top: 30px; /* Lidt afstand til brødteksten */
+    color: #ffffff;
+    /* Tekstfarve */
+    font-family: monospace;
+    /* Skrifttype */
+    font-size: 18px;
+    /* Skriftstørrelse */
+    padding: 10px 45px;
+    /* Indvendig afstand */
+    border-radius: 5px;
+    /* Runde hjørner */
+    cursor: pointer;
+    /* Ændrer cursoren til en hånd */
+    text-align: center;
+    /* Centrerer tekst */
+    margin-top: 30px;
+    /* Lidt afstand til brødteksten */
     margin-bottom: 90px;
   }
 
   /* Hover-effekt til knappen */
   .omradar-button-farver:hover {
-    background-color: #5c008e; /* Ændrer baggrundsfarve ved hover */
-    color: #ffffff; /* Sørger for, at tekstfarven forbliver hvid */
+    background-color: #5c008e;
+    /* Ændrer baggrundsfarve ved hover */
+    color: #ffffff;
+    /* Sørger for, at tekstfarven forbliver hvid */
   }
 
   .knap-farver {
-    text-align: center; /* Sørger for, at indholdet inde i div bliver centreret */
+    text-align: center;
+    /* Sørger for, at indholdet inde i div bliver centreret */
   }
 
   /* -----------------------------------------------
@@ -1813,33 +2023,42 @@ textarea {
 
   /*container for footeren*/
   .footer_container {
-    display: flex; /* Brug flexbox til at arrangere elementer i rækken */
-    align-items: center; /* Centrerer elementerne vertikalt */
+    display: flex;
+    /* Brug flexbox til at arrangere elementer i rækken */
+    align-items: center;
+    /* Centrerer elementerne vertikalt */
     justify-content: space-evenly;
-    padding: 0 2%; /* Indrykker til venstre og højre */
+    padding: 0 2%;
+    /* Indrykker til venstre og højre */
   }
 
   /*tekstkolonnerne*/
   .footer_text_columns {
     display: table-row;
-    width: 95%; /* Juster bredden, så tekstkolonnerne ikke fylder for meget */
-    justify-content: space-between; /* Fordel plads mellem kolonnerne */
+    width: 95%;
+    /* Juster bredden, så tekstkolonnerne ikke fylder for meget */
+    justify-content: space-between;
+    /* Fordel plads mellem kolonnerne */
   }
 
   /*kollonnernes fordeling*/
   .footer-column {
     width: 80%;
-    padding: 30px 10px; /* Tilføjer lidt padding mellem kolonnerne */
+    padding: 30px 10px;
+    /* Tilføjer lidt padding mellem kolonnerne */
     text-decoration: none;
-    color: #ffffff; /* Justér farven på tekst */
+    color: #ffffff;
+    /* Justér farven på tekst */
     align-items: center;
   }
 
   /* Style for sociale links */
   .sociale {
     display: flex;
-    flex-direction: column; /* Sørger for, at linksene vises under hinanden */
-    gap: 18px; /* Tilføj lidt afstand mellem hvert link */
+    flex-direction: column;
+    /* Sørger for, at linksene vises under hinanden */
+    gap: 18px;
+    /* Tilføj lidt afstand mellem hvert link */
   }
 
   /*kollonne overskrift*/
@@ -1876,7 +2095,8 @@ textarea {
   }
 
   .socialemedier {
-    font-size: 13px; /* Mindre skrifttype til tekstindhold */
+    font-size: 13px;
+    /* Mindre skrifttype til tekstindhold */
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
@@ -1887,24 +2107,28 @@ textarea {
 
   /*hover-effekt (streg under, når musen kommer over, hvis ønsket*/
   .footer-column a:hover {
-    text-decoration: underline; /* Tilføj en understregning ved hover, hvis ønsket */
+    text-decoration: underline;
+    /* Tilføj en understregning ved hover, hvis ønsket */
   }
 
   /* For at justere "RADAR"-kolonnen til højre */
   .footer-column:nth-child(2) {
-    margin-left: 0%; /* Flyt "RADAR"-kolonnen til højre */
+    margin-left: 0%;
+    /* Flyt "RADAR"-kolonnen til højre */
   }
 
   /* For at justere "FØLG OS"-kolonnen til højre */
   .footer-column:nth-child(3) {
-    margin-left: 0%; /* Flyt "FØLG OS"-kolonnen til højre */
+    margin-left: 0%;
+    /* Flyt "FØLG OS"-kolonnen til højre */
   }
 
   /*--------------Nyhedsboksen------------*/
   input[type='text'],
   select,
   textarea {
-    width: 100%; /* Gør de hvide bokse kortere */
+    width: 100%;
+    /* Gør de hvide bokse kortere */
     padding: 10px;
     border: 1px solid #ffffff;
     box-sizing: border-box;
@@ -1918,7 +2142,8 @@ textarea {
   input[type='email'],
   select,
   textarea {
-    width: 100%; /* Gør de hvide bokse kortere */
+    width: 100%;
+    /* Gør de hvide bokse kortere */
     padding: 10px;
     border: 1px solid #ffffff;
     box-sizing: border-box;
@@ -1934,7 +2159,6 @@ textarea {
   }
 
   .submit-button {
-    width: 100%; /* Gør knappen samme bredde som de hvide bokse */
     background-color: #393838;
     border: 1px solid #9747ff;
     color: #9747ff;
