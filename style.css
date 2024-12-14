@@ -1484,6 +1484,7 @@ textarea {
   text-align: center;
   text-decoration: none;
   font-size: 16px;
+  width: 100%;
 }
 
 /*ændre knapfarve, når musen kommer over*/
@@ -2008,7 +2009,7 @@ textarea {
   .hvor-overskrift,
   .findvej-overskrift,
   .indgang-overskrift {
-    font-size: 50px;
+    font-size: 70px;
   }
 
   .hvor-tekst,
