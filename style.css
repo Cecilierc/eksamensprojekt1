@@ -1256,6 +1256,56 @@ a:hover {
   text-align: center;
   width: 80%;
   margin: auto;
+  margin-bottom: 60px;
+}
+
+/* --------------------------FIND VEJ Sektion---------------------------- */
+.find-vej {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #6a11cb, #e63312);
+  color: #fff;
+}
+
+.findvej-overskrift {
+  font-size: 80px;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  font-family: a Attack Graffiti;
+  color: #fff;
+}
+
+/* ----------------------INDGANG OG PARKERING Sektion----------------- */
+.indgang-parkering {
+  padding: 40px 20px;
+}
+
+.indgang-container {
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.indgangbillede {
+  width: 120%;
+}
+
+.indgang-overskrift {
+  font-size: 60px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+  font-family: monospace;
+}
+
+.parkering-tekst {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* -----------------------------------------------
@@ -1948,6 +1998,37 @@ textarea {
     /* Sørger for, at indholdet inde i div bliver centreret */
   }
 
+  /* -----------------------------------------------
+                Hvor er vi
+----------------------------------------------- */
+  .indgang-container {
+    flex-direction: column;
+  }
+
+  .hvor-overskrift,
+  .findvej-overskrift,
+  .indgang-overskrift {
+    font-size: 50px;
+  }
+
+  .hvor-tekst,
+  .parkering-tekst {
+    font-size: 16px;
+  }
+
+  .indgangbillede {
+    display: none;
+  }
+
+  .indgang-container {
+    margin-top: -40px;
+    margin-bottom: 30px;
+  }
+
+  .findvej-map iframe {
+    height: 400px; /* Mindste kort-højde for små telefoner */
+    width: 90%;
+  }
   /* -----------------------------------------------
                     Blog
   ----------------------------------------------- */
