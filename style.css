@@ -1610,7 +1610,7 @@ textarea {
   .overskrift-forside {
     text-align: center;
     margin-top: 100px;
-    font-size: 70px;
+    font-size: 60px;
 
     /* Mellemrum mellem hver bogstav */
     letter-spacing: 4px;
@@ -1630,43 +1630,37 @@ textarea {
   /* ------------------------Frivillig container--------------------------- */
   /* Container, der dækker hele bredden */
   .container-farver-forside {
-    display: table-row;
-    /* Brug Flexbox til at arrangere elementerne */
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    /* Centrerer elementerne vertikalt */
-    width: auto;
-    /* Fylder 100% af bredden */
+    justify-content: center;
+    width: 100%;
     padding: 20px;
-    /* Lidt padding omkring indholdet */
-    height: 500px;
+    box-sizing: border-box;
+    height: 700px;
   }
 
   .hvid-forside-graf-overskrift {
     font-family: a Attack Graffiti;
     color: #ffffff;
-    font-size: 100px;
+    font-size: 60px;
     letter-spacing: 5px;
   }
 
   .boks-broedtekst {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: lighter;
-    margin-top: 30px;
-    width: 150%;
-    text-align: center;
+    font-size: 16px; /* Reduceret skriftstørrelse */
+    width: 100%; /* Fjern bredder som 150% */
+    margin: 10px 0; /* Mindre margin */
   }
 
   /* Styling til knappen */
   .boks-button {
-    display: flex;
-    /* Sørger for, at knappen kan have padding og margin */
-    margin-left: 155px;
+    display: inline-block;
     text-align: center;
-    /* Centrerer tekst */
-    margin-top: 30px;
-    /* Lidt afstand til brødteksten */
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 14px;
+    width: auto; /* Fjern faste bredder */
   }
 
   /* Hover-effekt til knappen */
@@ -1679,33 +1673,37 @@ textarea {
 
   /* Venstre indhold */
   .left-content {
-    margin: 50px;
+    width: 100%; /* Fylder hele bredden */
+    margin: 0;
+    padding: 10px; /* Mindre padding */
     text-align: center;
   }
 
   /* Højre indhold */
   .right-content {
-    width: 50%;
-    /* Giver højre side 50% af bredden */
-    margin: 50px;
+    width: 100%; /* Fylder hele bredden */
+    margin: 0;
+    padding: 10px; /* Mindre padding */
+    text-align: center;
   }
 
   .boks-billede {
-    max-width: 150%;
-    /* Gør billedet responsivt, så det fylder højre side */
-    height: auto;
-    /* Bevarer billedets proportioner */
-    align-items: center;
+    width: 100%; /* Responsiv bredde */
+    max-width: 100%;
+    height: auto; /* Bevarer billedets proportioner */
   }
 
   /* ------------------------Kommende events container--------------------------- */
   /* Styling til event-container */
   .event-container {
-    width: auto;
-    padding: 40px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
     box-sizing: border-box;
+    height: 350px;
   }
 
   .event-overskrift {
@@ -1714,25 +1712,20 @@ textarea {
     font-weight: lighter;
     margin-bottom: -40px;
     text-transform: uppercase;
+    padding-top: -30px;
   }
 
   /* Styling til event-indhold */
   .event {
-    display: table-row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    /* Lidt plads mellem elementer */
-    border-radius: 8px;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0;
   }
 
   /* Venstre sektion (billedet) */
   .event-image {
-    flex: 1;
-    height: 250px;
-    /* Fast højde */
-    background-size: cover;
-    background-position: center;
+    width: 100%;
+    height: auto;
   }
 
   .kommendeevents-billede {
@@ -1741,13 +1734,9 @@ textarea {
 
   /* Højre sektion (tekst og knap) */
   .event-details {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    /* Afstand mellem elementer */
-    padding-top: 150px;
+    width: 100%;
+    text-align: left;
+    padding: 20px 0;
   }
 
   .event-overskrift2 {
@@ -1774,49 +1763,42 @@ textarea {
     font-size: 14px;
     cursor: pointer;
     border-radius: 4px;
-    width: 200px;
+    width: 150px;
   }
 
   /* ------------------------Blog container--------------------------- */
   /* Container, der dækker hele bredden */
   .container-grå-forside {
-    display: table-row;
-    /* Brug Flexbox til at arrangere elementerne */
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    /* Centrerer elementerne vertikalt */
-    width: auto;
-    /* Fylder 100% af bredden */
+    justify-content: center;
+    width: 100%;
     padding: 20px;
-    /* Lidt padding omkring indholdet */
-    height: 500px;
+    box-sizing: border-box;
+    height: 700px;
   }
 
   .farvede-forside-graf-overskrift {
     font-family: a Attack Graffiti;
-    font-size: 75px;
+    font-size: 50px;
     letter-spacing: 5px;
-    width: 460px;
   }
 
   .boks-grå-broedtekst {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: lighter;
-    margin-top: 30px;
-    width: 150%;
-    text-align: center;
+    font-size: 16px; /* Reduceret skriftstørrelse */
+    width: 100%; /* Fjern bredder som 150% */
+    margin: 10px 0; /* Mindre margin */
   }
 
   /* Styling til knappen */
   .boks-grå-button {
-    display: flex;
-    /* Sørger for, at knappen kan have padding og margin */
-    margin-left: 155px;
+    display: inline-block;
     text-align: center;
-    /* Centrerer tekst */
-    margin-top: 30px;
-    /* Lidt afstand til brødteksten */
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 14px;
+    width: auto; /* Fjern faste bredder */
   }
 
   /* Hover-effekt til knappen */
@@ -1829,23 +1811,24 @@ textarea {
 
   /* Venstre indhold */
   .left-grå-content {
-    margin: 50px;
+    width: 100%; /* Fylder hele bredden */
+    margin: 0;
+    padding: 10px; /* Mindre padding */
     text-align: center;
   }
 
   /* Højre indhold */
   .right-grå-content {
-    width: 50%;
-    /* Giver højre side 50% af bredden */
-    margin: 50px;
+    width: 100%; /* Fylder hele bredden */
+    margin: 0;
+    padding: 10px; /* Mindre padding */
+    text-align: center;
   }
 
   .boks-billede-blog {
-    max-width: 150%;
-    /* Gør billedet responsivt, så det fylder højre side */
-    height: auto;
-    /* Bevarer billedets proportioner */
-    align-items: center;
+    width: 100%; /* Responsiv bredde */
+    max-width: 100%;
+    height: auto; /* Bevarer billedets proportioner */
   }
 
   /* -----------------------------------------------
@@ -1885,7 +1868,7 @@ textarea {
 
   /* Venstre kolonne (overskrift) */
   .lillaoverskrift-frivilllig {
-    font-size: 40px;
+    font-size: 34px;
     /* Skriftstørrelse */
     text-align: left;
     margin-left: 25px;
@@ -1913,6 +1896,7 @@ textarea {
     /* Centrerer horisontalt */
     align-items: center;
     /* Centrerer vertikalt */
+    height: 450px;
   }
 
   .frivillig-broedtekst-grå {
@@ -1921,12 +1905,16 @@ textarea {
     margin-left: 10%;
   }
 
+  .grafoverskrift-frivillig {
+    padding-top: 50px;
+  }
+
   /* -----------------------------------------------
                     Hvem er vi
   ----------------------------------------------- */
   .medarbejder-kort-frivillige {
-    grid-column: span 1;
-    /* Gør det til én kolonne på små skærme */
+    grid-column: span 1; /* Kun relevant hvis grid bruges */
+    text-align: center;
   }
 
   .medarbejder-billede {
@@ -1937,6 +1925,39 @@ textarea {
     object-fit: cover;
   }
 
+  .medarbejder-kort {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .medarbejder-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; /* Afstand mellem elementer */
+  }
+
+  .medarbejder-tekst {
+    flex: 1;
+    text-align: left;
+    width: 40px;
+  }
+
+  .medarbejder-navn {
+    font-size: 22px;
+  }
+
+  .medarbejder-opgaver {
+    margin-bottom: 25px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+
+  .medarbejder-knap {
+    padding: 10px 25px;
+  }
   /* -----------------------------------------------
                     Om radar
   ----------------------------------------------- */
@@ -2009,7 +2030,7 @@ textarea {
   .hvor-overskrift,
   .findvej-overskrift,
   .indgang-overskrift {
-    font-size: 70px;
+    font-size: 50px;
   }
 
   .hvor-tekst,
@@ -2036,6 +2057,7 @@ textarea {
 
   .blog-indhold {
     grid-template-columns: 1fr;
+    padding: 0;
   }
 
   .blog-artikel-header .blog-titel,
@@ -2085,7 +2107,7 @@ textarea {
   ----------------------------------------------- */
   .fejl-overskrift {
     text-align: center;
-    font-size: 150px;
+    font-size: 120px;
     font-family: monospace;
   }
 
